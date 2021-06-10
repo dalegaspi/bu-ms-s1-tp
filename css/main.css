@@ -1,0 +1,44 @@
+/*!
+ * main.css
+ * dlegaspi@bu.edu
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
+    letter-spacing: .01rem;
+    font-size: 1em;
+    font-weight: normal;
+    background-color: #111;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.025em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.025em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+p blockquote {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
