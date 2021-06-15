@@ -29,6 +29,11 @@ header {
     text-overflow: ellipsis;
 }
 
+a.brand-link:active, a.brand-link:visited, a.brand-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .logo {
     display: block;
     padding-right: 1rem;
@@ -80,36 +85,36 @@ span.brand {
     width: 100%;
     color: white;
     transition: .3s ease-in-out;
-    background-image: url("../images/home-banner.jpg");
+    background-image: url("../images/banners/home-banner.jpg");
 }
 
 .home-banner-image {
-    background-image: url("../images/home-banner.jpg");
+    background-image: url("../images/banners/home-banner.jpg");
 }
 
 .gallery-banner-image {
-    background-image: url("../images/gallery-banner.jpg");
+    background-image: url("../images/banners/gallery-banner.jpg");
 }
 
 .contact-banner-image {
-    background-image: url("../images/contact-banner.jpg");
+    background-image: url("../images/banners/contact-banner.jpg");
 }
 
 .portfolio-banner-image {
-    background-image: url("../images/portfolio-banner.jpg");
+    background-image: url("../images/banners/portfolio-banner.jpg");
 }
 
 .work-banner-image {
-    background-image: url("../images/work-banner.jpg");
+    background-image: url("../images/banners/work-banner.jpg");
 }
 
 .articles-banner-image {
-    background-image: url("../images/articles-banner.jpg");
+    background-image: url("../images/banners/articles-banner.jpg");
 }
 
 .home-intro {
     padding-top: 3rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .home-banner-text {
@@ -139,6 +144,14 @@ span.brand {
     }
 
     a.nav-item {
+        letter-spacing: unset;
+        padding: 0 0.25em;
+    }
+}
+
+@media all and (max-width: 500px) {
+    a.nav-item {
+        text-transform: lowercase;
         letter-spacing: unset;
         padding: 0 0.25em;
     }
@@ -249,4 +262,45 @@ a.link-on-dark:hover {
 .music-status {
     font-size: 12px;
     text-transform: lowercase;
+}
+
+h2.sub-header {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h2.article-title {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.25em;
+}
+
+h3.article-publish-date {
+    font-size: 12px;
+    color: #aaa;
+    letter-spacing: 0.60em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+pre.code {
+    font-family: "Andale Mono", monospace;
+    color: #777;
+    font-size: 1rem;
+}
+
+span.code {
+    font-family: "Andale Mono", monospace;
+    color: #777;
 }

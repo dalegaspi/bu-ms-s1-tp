@@ -4,6 +4,8 @@
  * @author dlegaspi@bu.edu
  */
 
+import {getRandomNumber} from "../utils.js";
+
 export const SimpleGreetings = {
     data() {
         return {
@@ -19,7 +21,20 @@ export const SimpleGreetings = {
                 greeting = 'evening';
             }
 
-            return `Good ${greeting}!`;
+            return `${this.prefix()} ${greeting}!`;
+        }
+    },
+    methods: {
+        prefix() {
+            const prefixes = ['Hope you are having a breathtaking',
+                'Good',
+                'What a good',
+                'Awesome',
+                'A pleasant',
+                'Great',
+                'Wishing you the best'];
+
+            return prefixes[getRandomNumber(prefixes.length)];
         }
     },
     template: `<span>{{ greeting }}</span>`
