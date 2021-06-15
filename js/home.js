@@ -12,7 +12,10 @@ export const Home = {
         </div>
         <div class="content home-intro">
             <h2 id="introduction" class="sub-header">Introduction</h2>
-            <p><simple-greetings></simple-greetings></p>
+            <p>
+                <!-- Vue component that generates randomized greeting based on time of day -->
+                <simple-greetings></simple-greetings>
+            </p>
             <p>My name is Dexter Legaspi. I am a graduate of <a href="https://mapua.edu.ph/">Mapúa Institute of
                 Technology</a> with a degree of Bachelor of
                 Science in Computer Engineering. I am currently pursuing a Master's Degree in Software Development at <a
@@ -32,7 +35,8 @@ export const Home = {
                 <a href="https://www.w3schools.com/w3css/defaulT.asp">CSS3</a>, 
             and <a href="https://www.w3schools.com/js/js_es6.asp">JavaScript (ECMAScript 2015)</a> with 
                 <a href="https://v3.vuejs.org/">Vue.js</a> + <a href="https://next.router.vuejs.org/">Vue Router</a>.
-                Stunning CSS Animations are from <a href="https://animista.net/">Animista</a>.
+                Stunning CSS Animations are from <a href="https://animista.net/">Animista</a>.  Icons supplied by 
+                <a href="https://ionic.io/ionicons">Ionicons</a>.
             </p>
             <p>You can view the source code on <a href="https://github.com/dalegaspi/bu-ms-s1-tp">this GitHub repository</a>.</p>
         </div>`

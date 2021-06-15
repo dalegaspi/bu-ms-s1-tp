@@ -9,6 +9,7 @@
 // components
 import {SimpleMusicControl} from "./components/music.js";
 import {SimpleGreetings} from "./components/greetings.js";
+import {SimplePortfolioCard} from "./components/card.js"
 
 // views
 import {Home} from "./home.js";
@@ -39,6 +40,7 @@ const app = Vue.createApp({});
 // attach the controls
 app.component('simple-music-control', SimpleMusicControl);
 app.component('simple-greetings', SimpleGreetings);
+app.component('simple-portfolio-card', SimplePortfolioCard);
 // attach the router
 app.use(router);
 

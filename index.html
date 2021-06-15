@@ -19,7 +19,11 @@
 </head>
 <body>
 <header>
-    <!-- This is a Single-Page Application using Vue + Vue Router -->
+    <!--
+    This is a Single-Page Application using Vue + Vue Router
+
+    Please refer to README.md for detailed information of the design.
+    -->
     <div class="header">
         <div class="brand">
             <div class="logo">
@@ -29,7 +33,7 @@
             <div class="nav-item">
                 <nav class="text-nowrap">
                     <router-link to="/" id="menu-home" class="nav-item">home</router-link>
-                    <router-link to="/work" id="menu-work" class="nav-item">work</router-link>
+                    <router-link to="/work" id="menu-work" class="nav-item">resume</router-link>
                     <router-link to="/portfolio" id="menu-portfolio" class="nav-item">portfolio</router-link>
                     <router-link to="/articles" id="menu-articles" class="nav-item">articles</router-link>
                     <router-link to="/gallery" id="menu-gallery" class="nav-item">gallery</router-link>
@@ -40,7 +44,10 @@
     </div>
 </header>
 <main>
+    <!-- router content inserted here -->
     <router-view></router-view>
+
+    <!-- Component for music control -->
     <simple-music-control></simple-music-control>
     <br>
 </main>

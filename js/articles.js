@@ -12,7 +12,7 @@ export const Articles = {
         </div>
         <div class="content home-intro">
             <article>
-                 <h2 class="article-title">Vue vs. React</h2>
+                <h2 class="article-title">Vue vs. React</h2>
                 <h3 class="article-publish-date">13 Jun 2021</h3>
                 <p>For me, the better choice is Vue regardless of size of the project. And this can be explained 
                 succinctly with three simple words: <b>Two Way Binding</b>.</p>

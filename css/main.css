@@ -16,9 +16,9 @@ header {
 }
 
 .shadow {
-    -webkit-box-shadow: 0px 2px 4px #000000;
-    -moz-box-shadow: 0px 2px 4px #000000;
-    box-shadow: 0px 2px 4px #000000;
+    -webkit-box-shadow: 0 2px 4px #000000;
+    -moz-box-shadow: 0 2px 4px #000000;
+    box-shadow: 0 2px 4px #000000;
 }
 
 .brand {
@@ -303,4 +303,140 @@ pre.code {
 span.code {
     font-family: "Andale Mono", monospace;
     color: #777;
+}
+
+h4.resume-title {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    margin-block: auto;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+h5.resume-title {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 1.5em;
+    margin-block: auto;
+    display: inline-block;
+}
+
+h6.resume-title {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    margin-block: auto;
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+p.resume, li.resume, ul.resume {
+    padding-top: 0.5rem;
+    font-size: 15px;
+    margin-block: auto;
+}
+
+section.employer {
+    padding-left: 1em;
+    border-left-color: rgb(232, 63, 63);
+    border-left-style: solid;
+}
+
+.resume-current {
+    margin-block: auto;
+    background-color: #77b384;
+    #vertical-align: super;
+    position: relative;
+    top: -0.25em;
+}
+
+h2.resume-sub-header {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    margin-block: auto;
+}
+
+.portfolio-column {
+    display: block;
+    padding: 0 0.5em;
+    width: 20%;
+    min-width: 250px;
+}
+
+.portfolio-row {
+    display: flex;
+    padding: 0.25em 0.25em;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media all and (max-width: 750px) {
+    .portfolio-row {
+        justify-content: space-around;
+    }
+}
+
+img.social-media {
+    position: relative;
+    top: +0.25em;
+    width: 1.25rem;
+    opacity: 50%;
+}
+
+input.contact-input-text {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #5a5a5a;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: .02rem;
+    transition: .3s;
+    outline: 0;
+    padding: .85rem 1.1rem;
+}
+
+label.contact-form {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: #777;
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: .25rem .5rem .25rem 0;
+}
+
+textarea.contact-input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: .02rem;
+    transition: .3s;
+    outline: 0;
+    margin: .5rem 0;
+    padding: 1rem 1.3rem;
+    min-height: 8rem;
+    line-height: 1.5rem;
+    resize: vertical;
 }
