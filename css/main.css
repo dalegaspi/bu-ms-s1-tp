@@ -3,44 +3,250 @@
  * dlegaspi@bu.edu
  */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.8;
-    letter-spacing: .01rem;
-    font-size: 1em;
-    font-weight: normal;
+@import "animate.css";
+@import "base.css";
+
+header {
     background-color: #111;
+    color: white;
+    padding-right: 2em;
+    padding-left: 2em;
+    max-height: 2em;
+    text-overflow: ellipsis;
 }
 
-main {
-    background-color: white;
+.shadow {
+    -webkit-box-shadow: 0px 2px 4px #000000;
+    -moz-box-shadow: 0px 2px 4px #000000;
+    box-shadow: 0px 2px 4px #000000;
 }
 
-footer {
-    background-color: #111;
+.brand {
+    align-items: center;
+    display: flex;
+    max-height: 4em;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+.logo {
+    display: block;
+    padding-right: 1rem;
+}
+
+.nav-item {
+    align-items: center;
+    text-overflow: ellipsis;
+}
+
+a.nav-item {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    padding: 0 0.5rem;
+    color: #444;
+    text-overflow: ellipsis;
+}
+
+a.nav-item:visited {
+    color: #444;
+}
+
+a.nav-item:hover {
+    color: lightgrey;
+}
+
+.text-nowrap {
+    white-space: nowrap !important;
+}
+
+h6.header {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+span.brand {
     color: white;
 }
 
-h1 {
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-    letter-spacing: 0.025em;
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.banner-image {
+    margin: auto;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    color: white;
+    transition: .3s ease-in-out;
+    background-image: url("../images/home-banner.jpg");
 }
 
-h2 {
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-    letter-spacing: 0.025em;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.home-banner-image {
+    background-image: url("../images/home-banner.jpg");
 }
 
-p blockquote {
-    font-size: 1rem;
-    line-height: 2;
-    margin-bottom: 1rem;
+.gallery-banner-image {
+    background-image: url("../images/gallery-banner.jpg");
+}
+
+.contact-banner-image {
+    background-image: url("../images/contact-banner.jpg");
+}
+
+.portfolio-banner-image {
+    background-image: url("../images/portfolio-banner.jpg");
+}
+
+.work-banner-image {
+    background-image: url("../images/work-banner.jpg");
+}
+
+.articles-banner-image {
+    background-image: url("../images/articles-banner.jpg");
+}
+
+.home-intro {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+.home-banner-text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#brand-name-short {
+    display: none;
+}
+
+@media all and (max-width: 750px) {
+    /*
+        this applies some responsiveness without
+        resorting to the "hamburger" icon which i personally
+        find tacky and overdone.
+
+        - the brand 'DEXTER LEGASPI' is replaced with 'DL'
+        - spacing of menu item letter spacing shrinks
+    */
+    #brand-name {
+        display: none;
+    }
+
+    #brand-name-short {
+        display: block;
+    }
+
+    a.nav-item {
+        letter-spacing: unset;
+        padding: 0 0.25em;
+    }
+}
+
+.small-text-wide {
+    font-size: 12px;
+    color: #aaa;
+    letter-spacing: 0.60em;
+    text-transform: uppercase;
+}
+
+p.small-text-wide {
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #555;
+}
+
+a:active {
+    color: #555;
+}
+
+a:visited {
+    color: #555;
+}
+
+a:hover {
+    color: black;
+}
+
+a.wide-link {
+    font-size: 14px;
+    letter-spacing: 0.60em;
+    text-transform: uppercase;
+}
+
+a.wide-link-bigger {
+    font-size: 16px;
+    letter-spacing: 0.60em;
+    text-transform: uppercase;
+}
+
+#musicButton {
+    width: 20px;
+    opacity: 20%;
+}
+
+#musicButton:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+a.link-on-dark {
+    color: #444;
+}
+
+
+a.link-on-dark:visited {
+    color: #444;
+}
+
+a.link-on-dark:hover {
+    color: white;
+}
+
+#bu-logo {
+    width: 112px;
+    height: 50px;
+}
+
+/* column and row sizing; changes depending on screen size */
+#gallery.content {
+    width: 100%;
+}
+
+.column {
+    display: block;
+    padding: 0 0.5em;
+    width: 20%;
+    min-width: 250px;
+}
+
+.row {
+    display: flex;
+    padding: 0.25em 0.25em;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+    .row {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
+
+.music-status {
+    font-size: 12px;
+    text-transform: lowercase;
 }

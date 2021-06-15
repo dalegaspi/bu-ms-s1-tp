@@ -1,0 +1,369 @@
+/*!
+ * base.css
+ * dlegaspi@bu.edu
+ */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
+    letter-spacing: .01rem;
+    font-size: 1em;
+    font-weight: normal;
+    background-color: #111;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.025em;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.025em;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p blockquote {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.flat-button {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    line-height: 1.5em;
+    border-radius: 4px;
+    user-select: none;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border: 1px solid #adadad;
+}
+
+.flat-button:hover {
+    background-color: #e6e6e6;
+}
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote {
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left-color: rgb(219, 219, 219);
+    border-left-style: solid;
+    box-sizing: border-box;
+    color: darkgray;
+    display: block;
+    letter-spacing: 0.01rem;
+    line-height: 2;
+    padding: 32px 16px;
+    margin-bottom: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.tag {
+    font-weight: 400;
+    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    margin: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    color: white;
+    align-items: center;
+    border-radius: .25rem;
+    display: inline-flex;
+    font-size: 75%;
+    line-height: 1.5;
+    min-height: 1.5rem;
+    padding: 0 .5rem;
+    white-space: nowrap;
+    background-color: royalblue;
+}
+
+.card {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: gray;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 12px 0 rgba(42, 51, 83, .12), 0 0 5px rgba(0, 0, 0, .06);
+    margin: 0 0 1rem;
+}
+
+.card-container {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: gray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 40%;
+    min-height: 332px;
+}
+
+.card-image {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: gray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 5px 5px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s ease-in-out;
+    background-image: url(https://tv-fanatic-res.cloudinary.com/iu/s--YmvjW_yI--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1396552469/king-robert-baratheon.png);
+}
+
+.title-container {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: gray;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.card-title {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;;
+    letter-spacing: .01rem;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem auto 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    text-transform: uppercase;
+}
+
+.card-subtitle {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+    margin: 1rem auto;
+}
+
+.card-actions {
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: gray;
+    margin: 0;
+    user-select: none;
+    padding: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.divider {
+    line-height: 1.8;
+    font-size: 1rem;
+    letter-spacing: .01rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: gray;
+    padding: 0;
+    box-sizing: border-box;
+    border-top: .05rem solid rgba(173, 173, 173, .5);
+    height: .1rem;
+    margin: 1.8rem 0 1.6rem;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.muted {
+    color: lightgrey;
+}
+
+.muted-darker {
+    color: #444;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.small-logo {
+    width: 20px;
+}
+
+.carousel-indicators ol {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff !important;
+    box-sizing: inherit;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    z-index: 1 !important;
+}
+
+.carousel-indicators li {
+    font-size: 15px;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: inherit;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    text-indent: -1999px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    position: relative;
+    transform: translate(-175%, 0);
+}
+
+.carousel-indicators-active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: darkgray;
+}
+
+.carousel-indicators-dark ol {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000 !important;
+    box-sizing: inherit;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    z-index: 1 !important;
+}
+
+.carousel-indicators-dark li {
+    font-size: 15px;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: inherit;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    text-indent: -999px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transform: translate(-175%, 0)
+}
+
+.carousel-indicators-active-dark {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.image-center {
+    text-align: center;
+    position: relative;
+}

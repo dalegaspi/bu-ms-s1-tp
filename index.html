@@ -4,29 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta content="Dexter Legaspi" name="author">
-    <meta content="html, css, JavaScript, CS601, BU" name="keywords">
+    <meta content="html, css, JavaScript, VueJS, Vue3, Vue, CS601, BU" name="keywords">
     <meta content="Term Project: Me, Myself, and I" name="description">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Boston University</title>
+    <title>Dexter Legaspi</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%20Sans:200,300,400,600,700">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/vue@3.1.1"></script>
+    <script src="https://unpkg.com/vue-router@4.0.8"></script>
+    <script type="module" src="js/main.js" defer></script>
     <noscript>This site requires JavaScript.</noscript>
 </head>
 <body>
 <header>
+    <!-- This is a Single-Page Application using Vue + Vue Router -->
+    <div class="header">
+        <div class="brand">
+            <div class="logo">
+                <h6 id="brand-name" class="header text-nowrap">Dexter Legaspi</h6>
+                <h6 id="brand-name-short" class="header">DL</h6>
+            </div>
+            <div class="nav-item">
+                <nav class="text-nowrap">
+                    <router-link to="/" id="menu-home" class="nav-item">home</router-link>
+                    <router-link to="/work" id="menu-work" class="nav-item">work</router-link>
+                    <router-link to="/portfolio" id="menu-portfolio" class="nav-item">portfolio</router-link>
+                    <router-link to="/articles" id="menu-articles" class="nav-item">articles</router-link>
+                    <router-link to="/gallery" id="menu-gallery" class="nav-item">gallery</router-link>
+                    <router-link to="/contact" id="menu-contact" class="nav-item">contact</router-link>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
-    <div>
-        <h1>H1 HEADLINE</h1>
-        <h2>H2 HEADLINE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <router-view></router-view>
+    <simple-music-control></simple-music-control>
+    <br>
 </main>
 <footer>
-    <p>hello.</p>
+    <footer>
+        <div class="content text-center">
+            <p class="small-text muted-darker">
+                Music by <a class="link-on-dark"
+                            href="https://bensound.com/royalty-free-music/track/piano-moment">Bensound</a><br>
+                Boston University Metropolitan College<br>
+                Class CS601, Prof. Vijay Kanabar
+            </p>
+        </div>
+        <div class="content text-center">
+            <a href="https://bu.edu"><img id="bu-logo" src="images/bu-logo.png"></a>
+        </div>
+        <br>
+    </footer>
 </footer>
 </body>
 </html>
