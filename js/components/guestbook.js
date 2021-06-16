@@ -34,7 +34,6 @@ export const SimpleGuestBook = {
         <label class="contact-form">Message</label>
         <textarea class="contact-input" v-model="message" id="message" maxlength="200"></textarea>
         <br>
-        <br>
         <button class="flat-button">Submit</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span>
         <span ref="messageOk" class="form-ok"> {{ status }}</span>
     </form>

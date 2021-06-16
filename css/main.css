@@ -345,7 +345,7 @@ section.employer {
     border-left-style: solid;
 }
 
-section.guest-message {
+div.guest-message {
     padding-left: 1em;
     border-left-color: #aaa;
     border-left-style: solid;
@@ -493,4 +493,26 @@ img.carousel {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+div.guest-message-ts {
+    text-align: right;
+    padding-right: 1em;
+    width: 30%;
+}
+
+div.guest-message-data {
+    width: 50%;
+}
+
+.guest-message-entry {
+    display: flex;
+}
+
+h6.guest-message-ts {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    margin-block: auto;
+    color: #777;
+    font-size: 0.8em;
+    font-weight: normal;
 }

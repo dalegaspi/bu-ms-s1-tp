@@ -32,7 +32,7 @@ export const Contact = {
                     <a href="https://stackoverflow.com/users/918858/dexter-legaspi">&nbsp;stackoverflow.com/users/918858/dexter-legaspi</a></h6>
                     <h6 class="resume-title"><img alt="linkedin" class="social-media" src="images/icons/logo-linkedin.svg"><a href="https://www.linkedin.com/in/dlegaspi">&nbsp;linkedin.com/in/dlegaspi</a></h6>
                 </section>
-                <br>
+             
             </section>
             <div class="divider"></div>
             <div class="content">
