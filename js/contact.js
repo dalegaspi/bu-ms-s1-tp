@@ -8,7 +8,7 @@ import eventHub from "./eventhub.js";
 
 export const Contact = {
     mounted() {
-        // reload new messages
+        // reload new messages on click
         this.$refs.reloadMessages.addEventListener('click', () => {
             console.log("force reload messages");
 
