@@ -65,7 +65,9 @@ export const Portfolio = {
             
             <section>
                 <h2 class="article-title">Overview</h2>
-                <p>This is a collection of the sites that I have built using current web technologies.</p>
+                <p>This is a collection of the sites that I have built using current web technologies.  
+                Click the <b>Launch</b> button to see the site; click the <b>GitHub</b> button to
+                see the source code on GitHub.</p>
             </section>
             <div class="divider"></div>
             
