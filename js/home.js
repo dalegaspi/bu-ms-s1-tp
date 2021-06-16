@@ -34,9 +34,10 @@ export const Home = {
             <p>This website is built with <a href="https://www.w3schools.com/html/">HTML5</a>, 
                 <a href="https://www.w3schools.com/w3css/defaulT.asp">CSS3</a>, 
             and <a href="https://www.w3schools.com/js/js_es6.asp">JavaScript (ECMAScript 2015)</a> with 
-                <a href="https://v3.vuejs.org/">Vue.js</a> + <a href="https://next.router.vuejs.org/">Vue Router</a>.
+                <a href="https://v3.vuejs.org/">Vue.js</a> + <a href="https://next.router.vuejs.org/">Vue Router</a>
+                + <a href="https://github.com/scottcorgan/tiny-emitter">Tiny Emitter</a>.
                 Stunning CSS Animations are from <a href="https://animista.net/">Animista</a>.  Icons supplied by 
-                <a href="https://ionic.io/ionicons">Ionicons</a>.
+                <a href="https://ionic.io/ionicons">Ionicons</a>.  Stock photos from <a href="https://unsplash.com">Unsplash</a>.
             </p>
             <p>You can view the source code on <a href="https://github.com/dalegaspi/bu-ms-s1-tp">this GitHub repository</a>.</p>
         </div>`

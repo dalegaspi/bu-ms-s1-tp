@@ -4,7 +4,7 @@
  * @author dlegaspi@bu.edu
  */
 
-import {addClassWithDelay, removeClassWithDelay} from "../utils.js";
+import {addClassWithDelay, preloadImages, removeClassWithDelay} from "../utils.js";
 
 export const SimpleImageCarousel = {
     data() {
@@ -50,6 +50,10 @@ export const SimpleImageCarousel = {
             ]
         }
     },
+    created() {
+        console.log('pre-loading carousel images...');
+        preloadImages(this.images.map(i => i.url));
+    },
     computed: {
         currentStateText() {
             return `Image ${this.currentIndex + 1} of ${this.images.length}`;
@@ -69,7 +73,7 @@ export const SimpleImageCarousel = {
         }
     },
     template: `
-        <div class="content">
+        <div>
             <div class="portfolio-row">
                 <img ref="current" class="carousel" :src="images[currentIndex].url">
             </div>

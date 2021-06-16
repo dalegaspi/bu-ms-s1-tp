@@ -6,27 +6,41 @@
 
 'use strict';
 
+import eventHub from "../eventhub.js";
+
 const GUESTS_MESSAGES_URL = 'https://www.subtleimages.com/api/guestbook/messages';
 export const SimpleGuestMessages = {
     data() {
         return {
+            refreshCounter: 0,
             messages: []
         }
     },
     mounted() {
-        return fetch(GUESTS_MESSAGES_URL)
-            .then(response => {
-                console.log('Data retrieval successful.')
-                return response.json();
-            })
-            .then(data => {
-                this.messages = data;
-            })
-            .catch((error) => {
-                console.error('Error: ', error);
-            });
+        this.refreshData();
+        eventHub.$on('refresh-guest-list', () => this.refresh());
     },
     methods: {
+        refreshData() {
+            fetch(GUESTS_MESSAGES_URL)
+                .then(response => {
+                    console.log('Data retrieval successful.')
+                    return response.json();
+                })
+                .then(data => {
+                    this.messages = data;
+                })
+                .catch((error) => {
+                    console.error('Error: ', error);
+                });
+        },
+
+        refresh() {
+            console.log("triggering refresh");
+            this.refreshData();
+            this.refreshCounter += 1;
+        },
+
         getMessageDate(ts) {
             let date = new Date(ts);
 
@@ -34,12 +48,15 @@ export const SimpleGuestMessages = {
         }
     },
     template: `
-        <div v-for="m in messages">
-            <section class="guest-message">
-                <h5 class="guest-message">{{ m.name }}</h5>
-                <h6 class="resume-title">{{ getMessageDate(m.ts) }}</h6>
-                <h6 class="resume-title">"{{ m.msg }}"</h6>
-            </section>
-            <br>
-        </div>`
+        <div :key="refreshCounter">
+            <div v-for="m in messages">
+                <section class="guest-message">
+                    <h5 class="guest-message">{{ m.name }}</h5>
+                    <h6 class="resume-title">{{ getMessageDate(m.ts) }}</h6>
+                    <h6 class="resume-title">"{{ m.msg }}"</h6>
+                </section>
+                <br>
+            </div>
+        </div>
+        `
 }

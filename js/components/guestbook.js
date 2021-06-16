@@ -5,6 +5,8 @@
  */
 
 'use strict';
+import eventHub from "../eventhub.js";
+import {blurThenHideText, removeClassWithDelay} from "../utils.js";
 
 // regex from: https://vuejs.org/v2/cookbook/form-validation.html
 const GUESTBOOK_POST_URL = 'https://www.subtleimages.com/api/guestbook/message'
@@ -33,7 +35,8 @@ export const SimpleGuestBook = {
         <textarea class="contact-input" v-model="message" id="message" maxlength="200"></textarea>
         <br>
         <br>
-        <button class="flat-button">Submit</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span><span class="form-ok"> {{ status }}</span>
+        <button class="flat-button">Submit</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span>
+        <span ref="messageOk" class="form-ok"> {{ status }}</span>
     </form>
     `,
     methods: {
@@ -45,14 +48,28 @@ export const SimpleGuestBook = {
             return name !== undefined && name.length > 0;
         },
 
+        refreshGuestMessages() {
+            eventHub.$emit('refresh-guest-list');
+        },
+
+        resetInputs() {
+            this.name = '';
+            this.email = '';
+            this.message = '';
+        },
+
         validateAndSubmit(e) {
             e.preventDefault();
 
+            let messageOkText = this.$refs.messageOk;
+            removeClassWithDelay(messageOkText, 'text-blur-out');
             if (!this.isValidEmail(this.email)) {
                 console.log("guestbook invalid e-mail")
                 this.error = 'Invalid e-mail';
+                this.status = ''
             } else if (!this.isValidName(this.name)) {
                 this.error = 'Invalid name';
+                this.status = ''
                 console.log("guestbook invalid name")
             } else {
                 // https://stackoverflow.com/a/46640744/918858
@@ -76,6 +93,13 @@ export const SimpleGuestBook = {
                         if (result == 'ok') {
                             this.error = '';
                             this.status = `Guest book message submission is successful.`;
+                            this.resetInputs();
+                            blurThenHideText(messageOkText, 3000);
+
+                            // we can have this for "live" update of messages as soon as "Submit" is pressed
+                            // but it's disabled for now to avoid too much chatter on the backend
+
+                            // this.refreshGuestMessages();
                         } else {
                             this.error = 'Guest book message submission status is unknown.';
                             this.status = '';

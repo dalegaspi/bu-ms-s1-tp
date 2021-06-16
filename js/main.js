@@ -21,6 +21,7 @@ import {Gallery} from "./gallery.js";
 import {Work} from "./work.js";
 import {Articles} from "./articles.js";
 import {Portfolio} from "./portfolio.js";
+import {preloadImages} from "./utils.js";
 
 // routes
 const routes = [
@@ -38,7 +39,18 @@ const router = VueRouter.createRouter({
 });
 
 // the app
-const app = Vue.createApp({});
+const app = Vue.createApp({
+    mounted() {
+        console.log("pre-loading banner images...");
+        preloadImages([
+            'images/banners/work-banner.jpg',
+            'images/banners/portfolio-banner.jpg',
+            'images/banners/articles-banner.jpg',
+            'images/banners/contact-banner.jpg',
+            'images/banners/gallery-banner.jpg',
+            'images/banners/articles-banner.jpg'])
+    }
+});
 
 // attach the controls
 app.component('simple-music-control', SimpleMusicControl);

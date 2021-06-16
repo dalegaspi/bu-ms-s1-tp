@@ -4,11 +4,15 @@
  * @author dlegaspi@bu.edu
  */
 'use strict';
+import eventHub from "./eventhub.js";
 
 export const Contact = {
     mounted() {
         // reload new messages
-        this.$refs.reloadMessages.addEventListener('click', () => window.location.reload());
+        this.$refs.reloadMessages.addEventListener('click', () => {
+            console.log("force reload messages");
+            eventHub.$emit('refresh-guest-list');
+        });
     },
     template: ` 
         <div class="banner-image contact-banner-image">

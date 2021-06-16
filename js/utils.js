@@ -13,7 +13,6 @@
  */
 export function blurThenHideText(textElement, delay = 1500, blurOutClass = 'text-blur-out') {
     console.log(`blurring out and removing text [${textElement.id}]`);
-    textElement.classList.add(blurOutClass);
     setTimeout(() => textElement.classList.add(blurOutClass), delay);
 }
 
