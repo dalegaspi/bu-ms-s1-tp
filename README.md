@@ -52,7 +52,7 @@ The API has 2 simple endpoints for putting and getting guestbook messages.  The 
 Puts messages into backend in a Redis storage
 
 ```
-curl -X "PUT" "https://subtleimags.com/guestbook/message" \
+curl -X "PUT" "https://subtleimags.com/api/guestbook/message" \
 -H 'Content-Type: application/x-www-form-urlencoded; charset=utf-8' \
 --data-urlencode "name=Tony" \
 --data-urlencode "email=tony@stark.com" \
@@ -63,7 +63,7 @@ curl -X "PUT" "https://subtleimags.com/guestbook/message" \
 Endpoint that etrieves (at most) 5 most recent messages from backend from Redis
 
 ```
-curl "https://subtleimags.com/guestbook/messages"
+curl "https://subtleimags.com/api/guestbook/messages"
 ```
 
 ```json

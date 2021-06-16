@@ -29,21 +29,7 @@ export const Contact = {
             <div class="divider"></div>
             <div class="content">
                 <h2 class="resume-sub-header">Guestbook</h2>
-                <form>
-                    <label class="contact-form">Name</label>
-                    <input type="text" class="contact-input-text">
-                    <br>
-                    <br>
-                    <label class="contact-form">E-Mail</label>
-                    <input type="text" class="contact-input-text">
-                    <br>
-                    <br>
-                    <label class="contact-form" rows="4" cols="50">Message</label>
-                    <textarea class="contact-input"></textarea>
-                    <br>
-                    <br>
-                    <button class="flat-button">Submit</button>
-                </form>
+                <simple-guestbook></simple-guestbook>
             </div>
         </div>`
 };

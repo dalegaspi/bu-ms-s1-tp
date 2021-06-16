@@ -18,8 +18,8 @@ export const Work = {
                 <h6 class="resume-title">August 2014 &mdash;</h6>
                 </section>
                 <section>
-                    <h5 class="resume-title">Team Lead, Senior Software Architect </h5>
-                    <h6 class="resume-title">July 2018 &mdash;</h6>
+                    <h5 class="resume-title">Team Lead, Principal Software Engineer</h5>
+                    <h6 class="resume-title">January 2021 &mdash;</h6>
                     <h6 class="resume-title">Lawerenceville, New Jersey</h6>
                     <p class="resume">Design and implementation of the APIS for the newer applications running on cars
                      and on mobile, web, and ten-foot devices with Envoy and Spring Cloud Gateway.</p>
@@ -29,7 +29,7 @@ export const Work = {
                 </section>
                 <section>
                     <h5 class="resume-title">Senior Software Architect</h5>
-                    <h6 class="resume-title">August 2014 &mdash; July 2018</h6>
+                    <h6 class="resume-title">August 2014 &mdash; December 2020</h6>
                     <h6 class="resume-title">Lawerenceville, New Jersey</h6>
                     <p class="resume">Responsible for design, implementation and enhancements of various backend 
                     systems that are part of the core function of the SiriusXM Internet- and satellite-based music players, 

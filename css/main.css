@@ -345,6 +345,16 @@ section.employer {
     border-left-style: solid;
 }
 
+.form-error {
+    color: rgb(232, 63, 63);
+    font-weight: bold;
+}
+
+.form-ok {
+    color: #77b384;
+    font-weight: bold;
+}
+
 .resume-current {
     margin-block: auto;
     background-color: #77b384;

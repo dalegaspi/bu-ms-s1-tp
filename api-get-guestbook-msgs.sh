@@ -1,0 +1,1 @@
+curl "https://www.subtleimages.com/api/guestbook/messages" | jq .
