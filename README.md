@@ -23,7 +23,11 @@ We are linking Vue.js and Vue Router scripts via CDN URLs.  To avoid having to d
 
 We are using [tiny-emitter](https://github.com/scottcorgan/tiny-emitter) as an event bus since we are using Vue 3,  the default internal event bus is gone and the [developers of Vue to use a library for the event bus](https://v3.vuejs.org/guide/migration/events-api.html#_3-x-update).  This part is just used _exclusively_ on the "Contact" page to allow refreshing latest messages without a force reload of the browser (which is very jarring and inelegant).
 
-### Views
+### Modules
+
+The JavaScript/Vue code are broken down into two main groups: Views and Components.  The Views are the wholly-realized pages that correspond to one of the menu items, and Views can use one or more Components that aid to the enhancement of the View.
+
+#### Views
 
 | Name | Filename | Remarks |
 | ---- | --- | --- |
@@ -34,11 +38,11 @@ We are using [tiny-emitter](https://github.com/scottcorgan/tiny-emitter) as an e
 | Gallery | gallery.js | Gallery of images; uses carousel.js component |
 | Contact | contact.js | Contact information; uses guestbook.js and guests.js components |
 
-### Components
+#### Components
 
 | Name | Filename | Remarks |
 | ---- | --- | --- |
-| Card | card.js | Cards used by the Portfolio to showcase |
+| Card | card.js | Cards used by the Portfolio to showcase images |
 | Greetings | greetings.js | Greeting used on Home page to greet depending on time of day |
 | Music | music.js | Control to turn on/off background music |
 | Guestbook | guestbook.js | Guest book form validation and submission via AJAX |
@@ -50,12 +54,12 @@ We are using [tiny-emitter](https://github.com/scottcorgan/tiny-emitter) as an e
 - Utils.js - contains the common utility functions.
 - eventBus.js - the event bus that is used by Contacts page to refresh most recent 
 
-### API
+### API Backend
 
-The Backend API is powered by Python Flask and has 2 simple endpoints for putting and getting guestbook messages in "Contact" view.  The messages are persisted in Redis.
+The Backend API is powered by Python Flask and has 2 simple endpoints for putting and getting guestbook messages in "Contact" view.  The messages are persisted in Redis.  A snippet of the code that handles the PUT/GET endpoints and the corresponding Redis operations can be found in [this gist](https://gist.github.com/dalegaspi/f65397f4d987782cede4dfaf3c396eaf)
 
 #### Put Message
-Puts messages into backend in a Redis storage
+Saves messages into backend in a Redis storage
 
 ```
 curl -X "PUT" "https://subtleimags.com/api/guestbook/message" \

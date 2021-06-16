@@ -13,7 +13,8 @@ export const Gallery = {
         <div class="content home-intro">
             <section>
                 <h2 class="article-title">Photographs</h2>
-                <p>After acquiring a Pentax K-1000, burning through a few rolls of film, and getting back the pictures from 
+                <p>After acquiring a <a href="https://en.wikipedia.org/wiki/Pentax_K1000">Pentax K-1000</a> in high 
+                 school, burning through a few rolls of film, and getting back the pictures from 
                  the photo lab after a few days, I knew I got hooked.  There was a time I developed my own black and 
                  white film when I was engulfed by the hobby.  With the advent of digital photography, there was no 
                  looking back and I embranced the technology when it became more affordable.</p>

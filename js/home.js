@@ -26,9 +26,11 @@ export const Home = {
                 implemented a number of successful services that has stood the test of time. Most of the services have been
                 implemented using open-source software and modern design software patterns.
             </p>
-            <p>On this website, you will be able to see my work history, portfolio, images and articles
-                that will hopefully be useful to visitors and potential clients.</p>
-            <p>Enjoy!</p>
+            <p>On this website, you will be able to see <router-link to="/work">my work history</router-link>, 
+                <router-link to="/portfolio">portfolio</router-link>, <router-link to="/gallery">images</router-link> 
+                and <router-link to="/articles">articles</router-link> that will hopefully be useful to visitors and 
+                potential clients.</p>
+            <p>Enjoy! And feel free to <router-link to="/contact">contact</router-link> me and leave a message in the guest book!</p>
             <div class="divider"></div>
             <h2 id="about" class="sub-header">About This Website</h2>
             <p>This website is built with <a href="https://www.w3schools.com/html/">HTML5</a>, 
