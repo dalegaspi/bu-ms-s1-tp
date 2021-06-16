@@ -18,6 +18,8 @@ export const SimpleGuestMessages = {
     },
     mounted() {
         this.refreshData();
+
+        // catch the custom event fired from Contact -> reloadMessages click handler
         eventHub.$on('refresh-guest-list', () => this.refresh());
     },
     methods: {
@@ -36,6 +38,9 @@ export const SimpleGuestMessages = {
         },
 
         refresh() {
+            // this uses the component's :key attribute to force
+            // refresh/redraw of _this_ component only, not the entire screen
+            // as described here: https://michaelnthiessen.com/key-changing-technique/
             console.log("triggering refresh");
             this.refreshData();
             this.refreshCounter += 1;

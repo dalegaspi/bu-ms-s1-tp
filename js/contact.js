@@ -11,6 +11,9 @@ export const Contact = {
         // reload new messages
         this.$refs.reloadMessages.addEventListener('click', () => {
             console.log("force reload messages");
+
+            // eventHub.$emit(...) emits a custom 'refresh-guest-list' event that
+            // is caught in SimpleGuestMessages component
             eventHub.$emit('refresh-guest-list');
         });
     },
