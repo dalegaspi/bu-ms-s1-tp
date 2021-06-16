@@ -4,6 +4,8 @@
  * @author dlegaspi@bu.edu
  */
 
+import {addClassWithDelay, removeClassWithDelay} from "../utils.js";
+
 export const SimpleImageCarousel = {
     data() {
         return {
@@ -69,7 +71,7 @@ export const SimpleImageCarousel = {
     template: `
         <div class="content">
             <div class="portfolio-row">
-                <img class="carousel" :src="images[currentIndex].url">
+                <img ref="current" class="carousel" :src="images[currentIndex].url">
             </div>
             <div class="text-center"><span class="small-text-wide muted">{{ images[currentIndex].desc }}</span>
             <br>

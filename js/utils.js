@@ -40,6 +40,19 @@ export function removeClassWithDelay(element, className, delay = 500) {
     setTimeout(() => element.classList.remove(className));
 }
 
+/**
+ * add class to element after delay
+ *
+ * @param element
+ * @param className
+ * @param delay
+ */
+export function addClassWithDelay(element, className, delay = 500) {
+    console.log(`adding ${className} from ${element.id}`);
+    setTimeout(() => element.classList.add(className));
+}
+
+
 let preloadedImages = [];
 /**
  * preload images https://stackoverflow.com/a/29339033/918858
