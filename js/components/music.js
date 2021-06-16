@@ -34,7 +34,7 @@ export const SimpleMusicControl = {
             <img @click="toggleMusicClick" id="musicButton" class="muted" src="images/musical-notes.svg">
             <br>
             <span ref="musicStatusText" id="musicStatusText" class="small-text-wide muted music-status">{{ musicPlayStatusText }}</span>
-            <audio ref="backgroundMusic" autoplay loop src="audio/bensound-pianomoment.mp3">
+            <audio ref="backgroundMusic" loop src="audio/bensound-pianomoment.mp3">
                 Your browser does not support embedded audio.
             </audio>
         </div>`,

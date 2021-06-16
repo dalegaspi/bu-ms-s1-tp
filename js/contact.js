@@ -6,6 +6,10 @@
 'use strict';
 
 export const Contact = {
+    mounted() {
+        // reload new messages
+        this.$refs.reloadMessages.addEventListener('click', () => window.location.reload());
+    },
     template: ` 
         <div class="banner-image contact-banner-image">
             <h1 class="home-banner-text text-focus-in">CONTACT</h1>
@@ -31,5 +35,10 @@ export const Contact = {
                 <h2 class="resume-sub-header">Guestbook</h2>
                 <simple-guestbook></simple-guestbook>
             </div>
+            <div>
+                <h2 class="resume-sub-header">Guest Messages <span><img ref="reloadMessages" id="reloadMessages" src="images/reload-outline.svg"></span></h2>
+                <simple-guest-messages></simple-guest-messages>
+            </div>
         </div>`
 };
+

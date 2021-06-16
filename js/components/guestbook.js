@@ -1,5 +1,5 @@
 /**
- * music control Vue component
+ * guest book message submission Vue component
  *
  * @author dlegaspi@bu.edu
  */
@@ -30,7 +30,7 @@ export const SimpleGuestBook = {
         <br>
         <br>
         <label class="contact-form">Message</label>
-        <textarea class="contact-input" v-model="message" id="message" maxlength="50"></textarea>
+        <textarea class="contact-input" v-model="message" id="message" maxlength="200"></textarea>
         <br>
         <br>
         <button class="flat-button">Submit</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span><span class="form-ok"> {{ status }}</span>
