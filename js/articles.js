@@ -74,7 +74,7 @@ export const Articles = {
                 traditional way of thinking will probably lead you to this solution:</p>
                 <pre class="code">
 let lst = [];
-for (i = 0; i < tbl_hs_students.data.length; i++) {
+for (i = 0; i &lt; tbl_hs_students.data.length; i++) {
     if (tbl_hs_students.data[i].year == 4 && 
         tbl_hs_students.data[i].detention) {
         lst.push(tbl_hs_students.data[i].name);
