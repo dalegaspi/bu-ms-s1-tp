@@ -49,7 +49,7 @@ export const Portfolio = {
                     id: 4,
                     title: '.05',
                     subTitle: 'Vue.js Demo',
-                    desc: 'A simple Vue.js application with components.',
+                    desc: 'A Vue.js application with components.',
                     imgSrc: 'images/portfolio/05.jpg',
                     url: 'https://www.subtleimages.com/s/hw06',
                     repo: 'https://github.com/dalegaspi/bu-ms-s1-06'

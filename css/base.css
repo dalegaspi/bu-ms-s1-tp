@@ -3,16 +3,30 @@
  * dlegaspi@bu.edu
  */
 
+:root {
+    --si-almost-black: #111;
+    --si-body-font: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+    --si-header-font:  "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    --si-code-font: "Andale Mono", monospace;
+    --si-light-light-gray: #adadad;
+    --si-somewhat-light-gray: #e6e6e6;
+    --si-quarter-gray: #444;
+    --si-maybe-quarter-gray: #555;
+    --si-lucky-gray: #777;
+    --si-green: #77b384;
+    --si-red: rgb(232, 63, 63);
+    --si-almost-white: #ddd;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--si-body-font);
     line-height: 1.8;
     letter-spacing: .01rem;
     font-size: 1em;
     font-weight: normal;
-    background-color: #111;
+    background-color: var(--si-almost-black);
 }
 
 main {
@@ -25,7 +39,7 @@ footer {
 }
 
 h1 {
-    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--si-header-font);
     letter-spacing: 0.025em;
     font-size: 3em;
     font-weight: bold;
@@ -71,11 +85,11 @@ p blockquote {
     text-decoration: none;
     color: #333;
     background-color: white;
-    border: 1px solid #adadad;
+    border: 1px solid var(--si-light-light-gray);
 }
 
 .flat-button:hover {
-    background-color: #e6e6e6;
+    background-color: var(--si-somewhat-light-gray);
 }
 
 .content {
