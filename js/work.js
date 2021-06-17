@@ -106,7 +106,7 @@ export const Work = {
                         <h2 class="resume-sub-header">Education</h2>
                         <section>
                             <h5 class="resume-title">Boston University</h5> 
-                            <h6 class="resume-title-inline">MS Software Development</h6> <span class="tag resume-current">Candidate</span>
+                            <h6 class="resume-title-inline">MS Software Development</h6> <span class="tag resume-current">In Progress</span>
                             <br>
                             <h6 class="resume-title">2021 &mdash; </h6>
                         </section>
