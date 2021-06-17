@@ -46,7 +46,16 @@
 </header>
 <main>
     <!-- router content inserted here -->
+    <!--
     <router-view></router-view>
+    -->
+
+    <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in" appear>
+            <component :is="Component"></component>
+        </transition>
+    </router-view>
+
 
     <!-- Component for music control -->
     <simple-music-control></simple-music-control>
@@ -63,7 +72,7 @@
             </p>
         </div>
         <div class="content text-center">
-            <a href="https://bu.edu"><img id="bu-logo" src="images/bu-logo.png"></a>
+            <a href="https://bu.edu"><img alt="Boston University" id="bu-logo" src="images/bu-logo.png"></a>
         </div>
         <br>
     </footer>

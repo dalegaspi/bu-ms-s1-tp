@@ -13,6 +13,7 @@ import {SimplePortfolioCard} from "./components/card.js"
 import {SimpleGuestBook} from "./components/guestbook.js";
 import {SimpleGuestMessages} from "./components/guests.js";
 import {SimpleImageCarousel} from "./components/carousel.js";
+import {SimpleScrollTop} from "./components/scrolltop.js";
 
 // views
 import {Home} from "./home.js";
@@ -36,6 +37,18 @@ const routes = [
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
     routes,
+    scrollBehavior: (to, from, savedPosition) => {
+        if (to.hash) {
+            return {el: to.hash}
+        } else {
+            return {x: 0, y: 0}
+        }
+    },
+    methods: {
+        scrollToTop() {
+            window.scrollTo(0,0);
+        }
+    }
 });
 
 // the app
@@ -59,6 +72,7 @@ app.component('simple-portfolio-card', SimplePortfolioCard);
 app.component('simple-guestbook', SimpleGuestBook);
 app.component('simple-guest-messages', SimpleGuestMessages);
 app.component('simple-image-carousel', SimpleImageCarousel);
+app.component('simple-scroll-top', SimpleScrollTop);
 
 // attach the router
 app.use(router);

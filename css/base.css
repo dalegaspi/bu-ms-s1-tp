@@ -180,9 +180,9 @@ blockquote {
     right: 0;
     top: 0;
     border-radius: 5px 5px 0 0;
-    background-size: 400%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-image: url(https://tv-fanatic-res.cloudinary.com/iu/s--YmvjW_yI--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1396552469/king-robert-baratheon.png);
 }
 

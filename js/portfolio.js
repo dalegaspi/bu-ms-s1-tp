@@ -58,27 +58,30 @@ export const Portfolio = {
         }
     },
     template: ` 
-        <div class="banner-image portfolio-banner-image">
-            <h1 class="home-banner-text text-focus-in">PORTFOLIO</h1>
-        </div>
-        <div class="content home-intro">
-            <section>
-                <h2 class="article-title">Overview</h2>
-                <p>This is a collection of the sites that I have built using current web technologies.  
-                Click the <b>Launch</b> button to see the site; click the <b>GitHub</b> button to
-                see the source code on GitHub.</p>
-            </section>
-            <div class="divider"></div>
-            <div class="portfolio-row">
-                <div v-for="item in items" class="portfolio-column">
-                    <!-- passing the props to generate the cards; promoting reusablility of cards component -->
-                    <simple-portfolio-card :title="item.title"
-                                             :sub-title="item.subTitle"
-                                             :desc="item.desc"
-                                             :img-src="item.imgSrc"
-                                             :repo="item.repo"
-                                             :url="item.url"></simple-portfolio-card>
+        <div>
+            <div class="banner-image portfolio-banner-image">
+                <h1 class="home-banner-text text-focus-in">PORTFOLIO</h1>
+            </div>
+            <div class="content home-intro">
+                <section>
+                    <h2 class="article-title">Overview</h2>
+                    <p>This is a collection of the sites that I have built using current web technologies.  
+                    Click the <b>Launch</b> button to see the site; click the <b>GitHub</b> button to
+                    see the source code on GitHub.</p>
+                </section>
+                <div class="divider"></div>
+                <div class="portfolio-row">
+                    <div v-for="item in items" class="portfolio-column">
+                        <!-- passing the props to generate the cards; promoting reusablility of cards component -->
+                        <simple-portfolio-card :title="item.title"
+                                                 :sub-title="item.subTitle"
+                                                 :desc="item.desc"
+                                                 :img-src="item.imgSrc"
+                                                 :repo="item.repo"
+                                                 :url="item.url"></simple-portfolio-card>
+                    </div>
                 </div>
             </div>
-        </div>`
+        </div>
+        `
 }

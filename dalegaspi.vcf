@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 11.3.1//EN
+N:Legaspi;Dexter;;;
+FN:Dexter Legaspi
+EMAIL;type=INTERNET;type=HOME;type=pref:dalegaspi@gmail.com
+item1.EMAIL;type=INTERNET:dlegaspi@bu.edu
+item1.X-ABLabel:_$!<Other>!$_
+TEL;type=CELL;type=VOICE;type=pref:732-410-4914
+ADR;type=HOME;type=pref:;;;;NJ;;USA
+X-SOCIALPROFILE;type=twitter:http://twitter.com/dalegaspi
+X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/dlegaspi
+item2.URL;type=pref:https://www.dexterlegaspi.com/
+item2.X-ABLabel:_$!<HomePage>!$_
+BDAY:1974-08-14
+END:VCARD

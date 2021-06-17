@@ -6,6 +6,11 @@
 @import "animate.css";
 @import "base.css";
 
+html {
+    /* this does not work on Safari */
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #111;
     color: white;
@@ -147,6 +152,16 @@ span.brand {
         letter-spacing: unset;
         padding: 0 0.25em;
     }
+
+    div.content-left-toc {
+        display: none;
+        width: 0;
+        padding: 0;
+    }
+
+    div.content-right {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -286,6 +301,17 @@ h2.article-title {
     padding-bottom: 0.25em;
 }
 
+h2.article-toc {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.0em;
+    text-align: left;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+}
+
 h3.article-publish-date {
     font-size: 12px;
     color: #aaa;
@@ -298,6 +324,11 @@ pre.code {
     font-family: "Andale Mono", monospace;
     color: #777;
     font-size: 1rem;
+}
+
+div.code {
+    padding: 1em;
+    overflow: scroll;
 }
 
 span.code {
@@ -515,4 +546,137 @@ h6.guest-message-ts {
     color: #777;
     font-size: 0.8em;
     font-weight: normal;
+}
+
+div.content-with-toc {
+    display: flex;
+}
+
+div.content-left {
+    width: 20%;
+    padding-right: 1em;
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    justify-content: space-around;
+}
+
+div.content-left-toc {
+    position: sticky;
+    top: 0;
+    color: #777;
+}
+
+div.content-left-toc ul {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0 0 1em;
+}
+
+div.content-left-toc ul ul {
+    font-weight: normal;
+}
+
+div.content-right {
+    width: auto;
+    padding-left: 1em;
+}
+
+img.scroll-top {
+    padding-top: 1.5em;
+    width: 1.5em;
+    opacity: 20%;
+}
+
+img.scroll-top:hover {
+    opacity: 80%;
+}
+
+div.contact-card {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+section.contact-card-content {
+    text-overflow: ellipsis;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+section.download-vcard {
+    padding: 0;
+    margin-top: 1em;
+    text-align: right;
+    font-size: smaller;
+    white-space: nowrap !important;
+}
+
+img.download-vcard {
+    width: 1.5em;
+    opacity: 20%;
+    transform: translate(0, 25%);
+}
+
+img.download-vcard:hover {
+    opacity: 80%;
+}
+
+/* view transitions */
+
+.fade-enter-active,
+.fade-leave-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 500ms cubic-bezier(0.4, 0.25, 0.2, 1);
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+}
+
+table.flat-table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+table.flat-table th {
+    background-color: black;
+    color: white;
+}
+
+table.flat-table tr:hover {
+    background: #eee;
+}
+
+table.flat-table td {
+    color: black;
+}
+
+table.flat-table th, td {
+    border: 1px solid #444;
+    padding: 12px 12px;
+    border-collapse: collapse;
+}
+
+table.flat-table caption {
+    padding: 1em;
+    font-size: small;
+    #text-transform: uppercase;
+}
+
+p {
+    padding-top: 0.5em;
+    margin: 0.5em;
 }

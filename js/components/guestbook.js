@@ -28,13 +28,13 @@ export const SimpleGuestBook = {
         <br>
         <br>
         <label class="contact-form">E-Mail</label>
-        <input type="text" v-model="email" id="email" class="contact-input-text">
+        <input type="text" v-model="email" id="email" placeholder="Your e-mail will not be sold to anyone." class="contact-input-text">
         <br>
         <br>
         <label class="contact-form">Message</label>
-        <textarea class="contact-input" v-model="message" id="message" maxlength="200"></textarea>
+        <textarea class="contact-input" v-model="message" id="message" placeholder="Say something." maxlength="200"></textarea>
         <br>
-        <button class="flat-button">Submit</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span>
+        <button class="flat-button">Send Message</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span>
         <span ref="messageOk" class="form-ok"> {{ status }}</span>
     </form>
     `,
@@ -43,8 +43,12 @@ export const SimpleGuestBook = {
             return email !== undefined && EMAIL_REGEX.test(email);
         },
 
-        isValidName(name) {
-            return name !== undefined && name.length > 0;
+        isValidMessage(msg) {
+            return msg !== undefined && msg.length > 0;
+        },
+
+        normalizeName(name) {
+            return (name === undefined || name.length === 0) ? 'Anonymous' : name;
         },
 
         refreshGuestMessages() {
@@ -63,18 +67,18 @@ export const SimpleGuestBook = {
             let messageOkText = this.$refs.messageOk;
             removeClassWithDelay(messageOkText, 'text-blur-out');
             if (!this.isValidEmail(this.email)) {
-                console.log("guestbook invalid e-mail")
                 this.error = 'Invalid e-mail';
                 this.status = ''
-            } else if (!this.isValidName(this.name)) {
-                this.error = 'Invalid name';
+                console.log("guestbook invalid e-mail")
+            } else if (!this.isValidMessage(this.message)) {
+                this.error = 'Message should not be empty.';
                 this.status = ''
-                console.log("guestbook invalid name")
+                console.log("guestbook invalid msg")
             } else {
                 // https://stackoverflow.com/a/46640744/918858
                 let form = this.$refs.guestBook;
                 let fd = new FormData();
-                fd.append('name', this.name);
+                fd.append('name', this.normalizeName(this.name));
                 fd.append('email', this.email);
                 fd.append('message', this.message);
                 fetch(form.action, {
@@ -89,7 +93,7 @@ export const SimpleGuestBook = {
                     .then(data => {
                         let result = data['status'];
 
-                        if (result == 'ok') {
+                        if (result === 'ok') {
                             this.error = '';
                             this.status = `Guest book message submission is successful.`;
                             this.resetInputs();
