@@ -30,7 +30,7 @@ export const Articles = {
                     <a href="https://en.wikipedia.org/wiki/Barney_Stinson">A wise 
                     man</a> once said:</p>
                     <figure class="article-image content image-center">
-                        <img alt="New is Always Better" src="images/new_is_always_better.gif">
+                        <img class="carousel" alt="New is Always Better" src="images/new_is_always_better.gif">
                         <figcaption>A wise man speaks</figcaption>
                     </figure>
                     <p>So I went with Vue.js 3, and thankfully that was 
