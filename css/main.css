@@ -690,10 +690,28 @@ table.flat-table th, td {
 table.flat-table caption {
     padding: 1em;
     font-size: small;
-    #text-transform: uppercase;
 }
 
 p {
     padding-top: 0.5em;
     margin: 0.5em;
+}
+
+h5.article-title {
+    font-family:  var(--si-header-font);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: unset;
+    text-align: left;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+}
+
+figure.article-image {
+    padding: 1em;
+}
+
+figure.article-image caption {
+    padding: 1em;
+    font-size: small;
 }

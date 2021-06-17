@@ -15,10 +15,74 @@ export const Articles = {
                 <section>
                     <h2 class="article-toc">Contents</h2>
                     <ol type="i">
+                        <li><router-link to="#article3">The CS601 Term Project Experience</router-link></li>
                         <li><router-link to="#article1">Vue vs. React</router-link></li>
                         <li><router-link to="#article2">Arrow Functions and the Road to Functional Programming</router-link></li>
                     </ol>
                 </section>
+                <div class="divider"></div>
+                <article id="article3">
+                    <h2 class="article-title">The CS601 Term Project Experience</h2>
+                    <h3 class="article-publish-date">17 Jun 2021</h3>
+                    <h5 class="article-title">Part 1: Deciding on the Stack</h5>
+                    <p>I was lucky enough to have some experience with Vue.js, so it's a natural decision for me 
+                    to lean heavily on it.  As for deciding which version of Vue, it's somewhat easier: 
+                    <a href="https://en.wikipedia.org/wiki/Barney_Stinson">A wise 
+                    man</a> once said:</p>
+                    <figure class="article-image content image-center">
+                        <img alt="New is Always Better" src="images/new_is_always_better.gif">
+                        <figcaption>A wise man speaks</figcaption>
+                    </figure>
+                    <p>So I went with Vue.js 3, and thankfully that was 
+                    not as risky as I thought.  The huge advantage was the syntax and class structure/definitions 
+                    is vastly more simplified than version 2.</p>
+                    <p>I also decided on not using any bundle managers (e.g., NPM or Webpack); experience taught 
+                    me that they're not that beneficial for a relatively small project, so that I can just 
+                    rely on CDNs to host the Vue.js script.  However, not using bundle managers present a 
+                    different challenge: to not to be able to use Single File Component (i.e., using .vue 
+                    files).  Fortunately with ES6 string templates, it's not too bad since with IDE's like 
+                    WebStorm, the syntax highlighting and symbol completion is preserved even inside string 
+                    templates.</p>
+                    <p>The last part of the stack is what to use in the backend.  I've decided to just implement 
+                    a simple guest book.  I am already using Python Flask as my web server so what I did is to 
+                    add two more endpoints: one to save guest book message, and one to retrieve the last six 
+                    messages from the guest book.  The guest book itself is simple: a Redis database which is 
+                    using a random GUID as a key and stores the metadata as JSON.</p>
+                    <h5 class="article-title">Part 2: Start Writing It!</h5>
+                    <p>I did not start the Term Project until I finished HW5, which allows me to learn the use of 
+                    the Fetch API to do AJAX (which I know I was going to use), but the real bulk did not 
+                    start until I finished HW6 to test if Vue3 _without_ bundle managers is feasible, and 
+                    having to create Vue components that I can re-use in the project (the card and background 
+                    music control).</p>
+                    <p>As I started writing the code, I decided to further and use Vue Router to make it a 
+                    full-fledged Single Page App, which I knew is going to be a bit more challenge, but it 
+                    would allow for a more compact code (i.e., header/footer is written only once), to be able 
+                    to use transition animations between pages, making the browsing experience better.</p>
+                    <h5 class="article-title">Part 3: What Content Do I Put Here?</h5>
+                    <p>he welcome page was obvious enough as well as the Contact page.  Gallery is to be added 
+                    since it's been suggested in the Term Project guide.  What else?  I did not want the 
+                    Assignment effort to go to waste, and I had the Card Vue component from HW5 that I needed 
+                    to use, so why not use the Assignments as showcase?  And while we're at it, get a couple 
+                    of things from the Graded Discussion as articles.  The last piece of the puzzle was 
+                    ironically the Resume, which took me while to come up more than I would like to admit.</p>
+                    <h5 class="article-title">Part 4: It's Never Really Done!</h5>
+                    <p>I enjoyed working on the project so much I ended up doing a few all nighters to be able to 
+                    finish the basic working version.  But the curse of working on the front end, is that 
+                    improvements and enhancements are inevitable, so that took another couple of days (like 
+                    adding responsive/fluidity and enhancing the CSS transitions, optimizing AJAX calls) but 
+                    it certainly paid off.</p>
+                    <h5 class="article-title">Epilogue: What I Have Learned</h5>
+                    <p>This term project and subject as whole helped me learn a lot on front-end development.  I 
+                    am primarily a backend developer, and when I needed to do some quick front-end web UI, I 
+                    would rely so much on libraries like Bootstrap CSS and libraries like Moment.js.  I 
+                    realized I have taken them for granted because I didn't need to understand too much about 
+                    things like "flex box" or the difference between margin or padding or what an "inline 
+                    block" even means.  This subject has helped me better understand how HTML5/CSS3 and 
+                    JavaScript work together and potentially create a better UI experience.</p>
+                    <p>I have made a few websites in the past, but this Term Project is by far the only website 
+                    that I am truly proud of.</p>
+                </article>
+                <simple-scroll-top type="image"></simple-scroll-top>
                 <div class="divider"></div>
                 <article id="article1">
                     <h2 class="article-title">Vue vs. React</h2>
