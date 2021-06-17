@@ -353,6 +353,13 @@ h5.resume-title {
     font-size: 18px;
     padding-top: 1.5em;
     margin-block: auto;
+}
+
+h5.resume-title-inline {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 1.5em;
+    margin-block: auto;
     display: inline-block;
 }
 
@@ -362,6 +369,16 @@ h6.resume-title {
     color: #777;
     font-size: 16px;
     font-weight: normal;
+}
+
+h6.resume-title-inline {
+    white-space: nowrap;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    margin-block: auto;
+    color: #777;
+    font-size: 16px;
+    font-weight: normal;
+    display: inline-block;
 }
 
 p.resume, li.resume, ul.resume {

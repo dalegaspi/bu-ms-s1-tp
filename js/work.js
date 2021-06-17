@@ -31,11 +31,11 @@ export const Work = {
                     <section>
                     <h2 id="employers" class="resume-sub-header">Employment History</h2>
                     <section id="employer1" class="employer">
-                    <h4 class="resume-title">SiriusXM-Pandora</h4> <span class="tag resume-current">Current</span>
+                    <h4 class="resume-title">SiriusXM-Pandora</h4>
                     <h6 class="resume-title">August 2014 &mdash;</h6>
                     </section>
                     <section>
-                        <h5 class="resume-title">Team Lead, Principal Software Engineer</h5>
+                        <h5 class="resume-title-inline">Team Lead, Principal Software Engineer</h5> <span class="tag resume-current">Current</span>
                         <h6 class="resume-title">January 2021 &mdash;</h6>
                         <h6 class="resume-title">Lawerenceville, New Jersey</h6>
                         <p class="resume">Design and implementation of the APIS for the newer applications running on cars
@@ -105,12 +105,13 @@ export const Work = {
                     <section id="education">
                         <h2 class="resume-sub-header">Education</h2>
                         <section>
-                            <h5 class="resume-title">Boston University</h5> <span class="tag resume-current">In Progress</span>
-                            <h6 class="resume-title">MS Software Development</h6>
+                            <h5 class="resume-title">Boston University</h5> 
+                            <h6 class="resume-title-inline">MS Software Development</h6> <span class="tag resume-current">Candidate</span>
+                            <br>
                             <h6 class="resume-title">2021 &mdash; </h6>
                         </section>
                         <section>
-                            <h5 class="resume-title">Mapua University</h5>
+                            <h5 class="resume-title">Mapúa University</h5>
                             <h6 class="resume-title">BS Computer Engineering</h6>
                             <h6 class="resume-title">1990 &mdash; 1995</h6>
                         </section>

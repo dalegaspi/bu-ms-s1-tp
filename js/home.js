@@ -17,11 +17,10 @@ export const Home = {
                     <!-- Vue component that generates randomized greeting based on time of day -->
                     <simple-greetings></simple-greetings>
                 </p>
-                <p>My name is Dexter Legaspi. I am a graduate of <a href="https://mapua.edu.ph/">Mapúa Institute of
-                    Technology</a> with a degree of Bachelor of
-                    Science in Computer Engineering. I am currently pursuing a Master's Degree in Software Development at <a
-                            href="htts://bu.edu/">Boston
-                        University</a> on track for graduating in the fall of 2022.</p>
+                <p>My name is Dexter Legaspi. I am a graduate of <a href="https://mapua.edu.ph/">Mapúa University</a> 
+                    with a degree of Bachelor of Science in Computer Engineering. I am currently pursuing a Master's 
+                    Degree in Software Development at <a href="htts://bu.edu/">Boston University</a> on track for 
+                    graduating in the fall of 2022.</p>
                 <p>I am a professional software developer with over twenty-five years of experience in the field. I have
                     designed and
                     implemented a number of successful services that has stood the test of time. Most of the services have been
