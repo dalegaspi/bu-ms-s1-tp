@@ -131,46 +131,6 @@ span.brand {
     display: none;
 }
 
-@media all and (max-width: 750px) {
-    /*
-        this applies some responsiveness without
-        resorting to the "hamburger" icon which i personally
-        find tacky and overdone.
-
-        - the brand 'DEXTER LEGASPI' is replaced with 'DL'
-        - spacing of menu item letter spacing shrinks
-    */
-    #brand-name {
-        display: none;
-    }
-
-    #brand-name-short {
-        display: block;
-    }
-
-    a.nav-item {
-        letter-spacing: unset;
-        padding: 0 0.25em;
-    }
-
-    div.content-left-toc {
-        display: none;
-        width: 0;
-        padding: 0;
-    }
-
-    div.content-right {
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 500px) {
-    a.nav-item {
-        text-transform: lowercase;
-        letter-spacing: unset;
-        padding: 0 0.25em;
-    }
-}
 
 .small-text-wide {
     font-size: 12px;
@@ -262,17 +222,7 @@ a.link-on-dark:hover {
     justify-content: center;
 }
 
-@media all and (max-width: 800px) {
-    .row {
-        justify-content: space-around;
-    }
-}
 
-@media all and (max-width: 500px) {
-    .navigation {
-        flex-direction: column;
-    }
-}
 
 .music-status {
     font-size: 12px;
@@ -361,6 +311,7 @@ h5.resume-title-inline {
     padding-top: 1.5em;
     margin-block: auto;
     display: inline-block;
+    white-space: nowrap;
 }
 
 h6.resume-title {
@@ -448,12 +399,6 @@ h2.resume-sub-header {
     padding: 0.25em 0.25em;
     flex-flow: row wrap;
     justify-content: center;
-}
-
-@media all and (max-width: 750px) {
-    .portfolio-row {
-        justify-content: space-around;
-    }
 }
 
 img.social-media {
@@ -601,7 +546,7 @@ div.content-left-toc ul ul {
 
 div.content-right {
     width: auto;
-    padding-left: 1em;
+    padding-left: unset;
 }
 
 img.scroll-top {
@@ -720,4 +665,69 @@ figure.article-image img {
 figure.article-image caption {
     padding: 1em;
     font-size: small;
+}
+@media all and (max-width: 800px) {
+    .row {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 750px) {
+    /*
+        this applies some responsiveness without
+        resorting to the "hamburger" icon which i personally
+        find tacky and overdone.
+
+        - the brand 'DEXTER LEGASPI' is replaced with 'DL'
+        - spacing of menu item letter spacing shrinks
+    */
+    #brand-name {
+        display: none;
+    }
+
+    #brand-name-short {
+        display: block;
+    }
+
+    a.nav-item {
+        letter-spacing: unset;
+        padding: 0 0.25em;
+    }
+
+    div.content-left-toc {
+        display: none;
+        width: 0;
+        padding-right: unset;
+    }
+
+    div.content-right {
+        width: 100%;
+        padding-left: unset;
+    }
+
+    div.content-left {
+        display: none;
+        width: 0;
+        padding-right: unset;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .portfolio-row {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 500px) {
+    a.nav-item {
+        text-transform: lowercase;
+        letter-spacing: unset;
+        padding: 0 0.25em;
+    }
 }
