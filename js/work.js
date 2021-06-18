@@ -19,6 +19,7 @@ export const Work = {
                             <ul>
                                 <li><router-link to="#employer1">SiriusXM-Pandora</router-link></li>         
                                 <li><router-link to="#employer2">Associated Press</router-link></li>
+                                <li><router-link to="#employer3">Wave Systems</router-link></li>
                             </ul>
                             <li><router-link to="#education">Education</router-link></li>
                             <li><router-link to="#certifications">Certifications</router-link></li>
@@ -99,6 +100,32 @@ export const Work = {
                         and unique IDs shared across multiple systems that allows correlation and aggregation of data which 
                         is then used for trending. The libraries are thin wrappers for the REST calls to insert records to 
                         ElasticSearch so the app can easily adapt them in existing logging frameworks like log4j or NLog.</p>
+                    </section>
+                    <simple-scroll-top type="image"></simple-scroll-top>
+                    <div class="divider"></div>
+                    <section id="employer3" class="employer">
+                    <h4 class="resume-title">Wave Systems Corp.</h4>
+                    <h6 class="resume-title">July 2000 &mdash; July 2003</h6>
+                    </section>
+                    <section>
+                        <h5 class="resume-title">Senior Software Engineer</h5>
+                        <h6 class="resume-title">July 2000 &mdash; July 2003</h6>
+                        <h6 class="resume-title">Plainsboro, New Jersey</h6>
+                        <p class="resume">Designed and implemented a C Program that runs on a ARM CPU-based proprietary 
+                        device that communicates with a Windows Host program via USB. The module that handles the communication 
+                        is written as a DLL to promote reuse of the library. Device software was developed using ARM 
+                        Project Manager; Host software was developed using Microsoft Visual C++ 6.0. Rational Rose and 
+                        Rational Unified Process for design.</p>
+                        <p class="resume">Designed and implemented an ATL Component that is used to facilitate installation 
+                        of device driver for a proprietary multimedia software. Written using Microsoft Visual C++ 6.0 
+                        utilizing the ATL Wizard.</p>
+                        <p class="resume">Prototyped a Java Client that is designed to enable online (Internet) purchasing 
+                        through Linux-based Set-Top Boxes that is powered Java. Created using Java/J2EE with XML over HTTPS 
+                        for messaging (using Java Secure Sockets Extension) and JFC/Swing for user interface. Back-end is 
+                        hosted on a Jetty Web Server with CGI components written in Java with Xalan and Xerces-J for XML 
+                        and XSLT processing.</p>
+                        <p class="resume">Improved an existing Account Manager that runs in a Java WebServer using Java 
+                        Servlets and TopLink/JDBC for database access to a Sybase server.</p>
                     </section>
                     <simple-scroll-top type="image"></simple-scroll-top>
                     <div class="divider"></div>
