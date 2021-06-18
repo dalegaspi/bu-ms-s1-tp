@@ -2,6 +2,8 @@
 
 This project is a culmination of what has been learned in the CS601 class.  Page can be viewed live at [subtleimages.com/s/tp01/](https://www.subtleimages.com/s/tp01/).
 
+A video of the feature tour can be seen [here](https://youtu.be/Xl8y_MR7ps0).
+
 ## Technology Stack
 
 - HTML5
