@@ -311,7 +311,6 @@ h5.resume-title-inline {
     padding-top: 1.5em;
     margin-block: auto;
     display: inline-block;
-    white-space: nowrap;
 }
 
 h6.resume-title {
