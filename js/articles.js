@@ -59,7 +59,7 @@ export const Articles = {
                     would allow for a more compact code (i.e., header/footer is written only once), to be able 
                     to use transition animations between pages, making the browsing experience better.</p>
                     <h5 class="article-title">Part 3: What Content Do I Put Here?</h5>
-                    <p>he welcome page was obvious enough as well as the Contact page.  Gallery is to be added 
+                    <p>The welcome page was obvious enough as well as the Contact page.  Gallery is to be added 
                     since it's been suggested in the Term Project guide.  What else?  I did not want the 
                     Assignment effort to go to waste, and I had the Card Vue component from HW5 that I needed 
                     to use, so why not use the Assignments as showcase?  And while we're at it, get a couple 
