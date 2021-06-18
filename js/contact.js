@@ -39,7 +39,7 @@ export const Contact = {
                         </section>
                     </div>
                      <section class="download-vcard">
-                        <a href="dalegaspi.vcf">download vCard&nbsp;<img class="download-vcard" src="images/card-outline.svg"></a>
+                        <a title="download vCard" href="dalegaspi.vcf">download&nbsp;<img class="download-vcard" src="images/card-outline.svg"></a>
                      </section>
                 </section>
                 <div class="content">

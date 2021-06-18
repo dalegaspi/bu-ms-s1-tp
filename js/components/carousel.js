@@ -55,6 +55,51 @@ export const SimpleImageCarousel = {
                     "url": "images/gallery/i.jpg",
                     "desc": "Wild grass",
                     "exif": ["Nikon D600", "Zeiss 135 f2"]
+                },
+                {
+                    "url": "images/gallery/j.jpg",
+                    "desc": "A lizard",
+                    "exif": ["Fuji X-Pro 1", "Fuji 90 f2 WR"]
+                },
+                {
+                    "url": "images/gallery/k.jpg",
+                    "desc": "White flowers",
+                    "exif": ["Fuji X-Pro 1", "Fuji 90 f2 WR"]
+                },
+                {
+                    "url": "images/gallery/l.jpg",
+                    "desc": "Las Vegas Strip",
+                    "exif": ["Ricoh GR II"]
+                },
+                {
+                    "url": "images/gallery/m.jpg",
+                    "desc": "Carnaby Street",
+                    "exif": ["iPhone 6s"]
+                },
+                {
+                    "url": "images/gallery/n.jpg",
+                    "desc": "Stormtrooper",
+                    "exif": ["Nikon Z6", "Nikon Z 50 f1.8"]
+                },
+                {
+                    "url": "images/gallery/o.jpg",
+                    "desc": "Epcot Center, Disneyworld",
+                    "exif": ["Nikon Z6", "Nikon Z 50 f1.8"]
+                },
+                {
+                    "url": "images/gallery/p.jpg",
+                    "desc": "Not My Dog",
+                    "exif": ["Leica M9", "Voïgtlander 50 f2 APO"]
+                },
+                {
+                    "url": "images/gallery/q.jpg",
+                    "desc": "Camera gear",
+                    "exif": ["iPhone 12"]
+                },
+                {
+                    "url": "images/gallery/r.jpg",
+                    "desc": "Carrot cake",
+                    "exif": ["Leica M9", "Voïgtlander 50 f2 APO"]
                 }
             ]
         }

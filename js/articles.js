@@ -13,7 +13,7 @@ export const Articles = {
             </div>
             <div class="content home-intro print">
                 <section class="download-vcard">
-                    <simple-print-doc></simple-print-doc>
+                    <simple-print-doc title="print articles"></simple-print-doc>
                 </section>
                 <section class="collapse-on-print">
                     <h2 class="article-toc">Contents</h2>

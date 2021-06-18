@@ -37,7 +37,7 @@ export const Work = {
                         <h6 class="resume-title">T: (732) 410-4914</h6>
                     </section>
                     <section class="download-vcard">
-                        <simple-print-doc></simple-print-doc>
+                        <simple-print-doc title="print resume"></simple-print-doc>
                     </section>
                     <section>
                     <h2 id="employers" class="resume-sub-header collapse-on-print">Employment History</h2>
