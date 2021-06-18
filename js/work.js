@@ -13,7 +13,7 @@ export const Work = {
             </div>
             <div id="top" class="content home-intro content-with-toc">
                 <div class="content-left">
-                    <div class="content-left-toc">
+                    <div class="content-left-toc collapse-on-print">
                         <ul>
                             <li><router-link to="#employers">Employment</router-link></li>
                             <ul>
@@ -28,15 +28,25 @@ export const Work = {
                         </ul>
                     </div>
                 </div>
-                <div class="content content-right">
+                <div class="content content-right print">
+                    <!-- This section appears when in print only -->
+                    <section class="appear-on-print collapse-on-screen">
+                        <h4 class="resume-title-bigger">Dexter Legaspi</h4>
+                        <h6 class="resume-title">New Jersey, USA</h6>
+                        <h6 class="resume-title">E: dalegaspi@gmail.com</h6>
+                        <h6 class="resume-title">T: (732) 410-4914</h6>
+                    </section>
+                    <section class="download-vcard">
+                        <simple-print-doc></simple-print-doc>
+                    </section>
                     <section>
-                    <h2 id="employers" class="resume-sub-header">Employment History</h2>
+                    <h2 id="employers" class="resume-sub-header collapse-on-print">Employment History</h2>
                     <section id="employer1" class="employer">
                     <h4 class="resume-title">SiriusXM-Pandora</h4>
                     <h6 class="resume-title">August 2014 &mdash;</h6>
                     </section>
                     <section>
-                        <h5 class="resume-title-inline">Team Lead, Principal Software Engineer</h5> <span class="tag resume-current">Current</span>
+                        <h5 class="resume-title-inline">Team Lead, Principal Software Engineer</h5> <span class="tag resume-current hide-on-print">Current</span>
                         <h6 class="resume-title">January 2021 &mdash;</h6>
                         <h6 class="resume-title">Lawerenceville, New Jersey</h6>
                         <p class="resume">Design and implementation of the APIS for the newer applications running on cars
@@ -133,7 +143,7 @@ export const Work = {
                         <h2 class="resume-sub-header">Education</h2>
                         <section>
                             <h5 class="resume-title">Boston University</h5> 
-                            <h6 class="resume-title-inline">MS Software Development</h6> <span class="tag resume-current">In Progress</span>
+                            <h6 class="resume-title-inline">MS Software Development</h6> <span class="tag resume-current hide-on-print">In Progress</span>
                             <br>
                             <h6 class="resume-title">2021 &mdash; </h6>
                         </section>

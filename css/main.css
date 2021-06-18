@@ -298,6 +298,19 @@ h4.resume-title {
     display: inline-block;
 }
 
+h4.resume-title-bigger {
+    font-family: var(--si-header-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    margin-block: auto;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
 h5.resume-title {
     font-family: var(--si-header-font);
     font-size: 18px;
@@ -398,6 +411,19 @@ h2.resume-sub-header {
     padding: 0.25em 0.25em;
     flex-flow: row wrap;
     justify-content: center;
+    position: relative;
+}
+
+.portfolio-img-desc {
+    font-family: var(--si-header-font);
+    color: var(--si-almost-white);
+    opacity: 70%;
+    font-size: 0.70em;
+    padding: 0.2em 1em;
+    background-color: rgba(0,0,0, 0.4);
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
 }
 
 img.social-media {
@@ -470,6 +496,7 @@ textarea.contact-input {
 }
 
 img.carousel {
+    border: 4px solid black;
     line-height: 1.8;
     font-size: 1rem;
     font-weight: 400;
@@ -514,7 +541,7 @@ div.content-with-toc {
 }
 
 div.content-left {
-    width: 20%;
+    width: 40%;
     padding-right: 1em;
     display: flex;
     align-items: flex-start;
@@ -734,4 +761,19 @@ figure.article-image caption {
         letter-spacing: unset;
         padding: 0 0.25em;
     }
+}
+
+
+img.print-doc {
+    width: 1.5em;
+    opacity: 20%;
+    transform: translate(0, 25%);
+}
+
+img.print-doc:hover {
+    opacity: 80%;
+}
+
+.collapse-on-screen {
+    display: none;
 }

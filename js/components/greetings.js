@@ -26,10 +26,10 @@ export const SimpleGreetings = {
     },
     methods: {
         prefix() {
-            const prefixes = ['Hope you are having a breathtaking',
+            const prefixes = ['What a breathtaking',
                 'Good',
                 'What a good',
-                'Awesome',
+                'What an awesome',
                 'A pleasant',
                 'Great',
                 'Wishing you the best'];
@@ -37,5 +37,9 @@ export const SimpleGreetings = {
             return prefixes[getRandomNumber(prefixes.length)];
         }
     },
-    template: `<span>{{ greeting }}</span>`
+    template: `
+        <span v-if="!greeting.includes('breathtaking')">{{ greeting }}</span>
+        <!-- easter egg -->
+        <span v-else><a href="https://youtu.be/0DWap7pS7XM?t=134" target="_blank">{{ greeting }}&nbsp;&nbsp;<span class="tag">click me</span></a></span>
+    `
 }

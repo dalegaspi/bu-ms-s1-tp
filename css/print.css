@@ -1,0 +1,50 @@
+/*!
+ * print.css
+ *
+ * dlegaspi@bu.edu
+ */
+
+body {
+    /*
+        hide everything by default on print mode
+        we will only allow printing in articles and resume
+     */
+    visibility: hidden;
+}
+
+.print {
+    visibility: visible;
+}
+
+.collapse-on-print {
+    visibility: hidden;
+    #display: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hide-on-print {
+    visibility: hidden;
+}
+
+.appear-on-print {
+    display: block;
+    visibility: visible;
+}
+
+img {
+    max-width: 500px;
+}
+
+a {
+    color: black;
+}
+
+/* link extrapolation */
+a[href^="https://"]:after {
+    content: " (" attr(href) ")";
+    color: black;
+}
+

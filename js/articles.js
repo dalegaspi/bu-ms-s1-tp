@@ -11,8 +11,11 @@ export const Articles = {
             <div class="banner-image articles-banner-image">
                 <h1 class="home-banner-text text-focus-in">ARTICLES</h1>
             </div>
-            <div class="content home-intro">
-                <section>
+            <div class="content home-intro print">
+                <section class="download-vcard">
+                    <simple-print-doc></simple-print-doc>
+                </section>
+                <section class="collapse-on-print">
                     <h2 class="article-toc">Contents</h2>
                     <ol type="i">
                         <li><router-link to="#article3">The CS601 Term Project Experience</router-link></li>
@@ -20,7 +23,7 @@ export const Articles = {
                         <li><router-link to="#article2">Arrow Functions and the Road to Functional Programming</router-link></li>
                     </ol>
                 </section>
-                <div class="divider"></div>
+                <div class="divider collapse-on-print"></div>
                 <article id="article3">
                     <h2 class="article-title">The CS601 Term Project Experience</h2>
                     <h3 class="article-publish-date">17 Jun 2021</h3>
@@ -222,10 +225,6 @@ let lst2 = tbl_hs_students.data
                                 <td>lazy.js</td>
                                 <td><a href="https://danieltao.com/lazy.js/">danieltao.com/lazy.js</a></td>
                             </tr>   
-                            <tr>
-                                <td>MOUT</td>
-                                <td><a href="http://moutjs.com/">moutjs.com</a></td>
-                            </tr>
                         </tbody>
                     </table>
                     

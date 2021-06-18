@@ -14,6 +14,7 @@ import {SimpleGuestBook} from "./components/guestbook.js";
 import {SimpleGuestMessages} from "./components/guests.js";
 import {SimpleImageCarousel} from "./components/carousel.js";
 import {SimpleScrollTop} from "./components/scrolltop.js";
+import {SimplePrintDoc} from "./components/print.js";
 
 // views
 import {Home} from "./home.js";
@@ -22,6 +23,8 @@ import {Gallery} from "./gallery.js";
 import {Work} from "./work.js";
 import {Articles} from "./articles.js";
 import {Portfolio} from "./portfolio.js";
+
+// utils
 import {preloadImages} from "./utils.js";
 
 // routes
@@ -73,6 +76,7 @@ app.component('simple-guestbook', SimpleGuestBook);
 app.component('simple-guest-messages', SimpleGuestMessages);
 app.component('simple-image-carousel', SimpleImageCarousel);
 app.component('simple-scroll-top', SimpleScrollTop);
+app.component('simple-print-doc', SimplePrintDoc);
 
 // attach the router
 app.use(router);
