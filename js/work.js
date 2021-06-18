@@ -9,7 +9,7 @@ export const Work = {
     template: ` 
         <div>
             <div class="banner-image work-banner-image">
-                <h1 class="home-banner-text text-focus-in">RESUME</h1>
+                <h1 class="home-banner-text text-focus-in">WORK</h1>
             </div>
             <div id="top" class="content home-intro content-with-toc">
                 <div class="content-left">

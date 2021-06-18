@@ -684,7 +684,12 @@ figure.article-image caption {
         display: none;
     }
 
+    div.logo {
+        padding-right: 0.25em;
+    }
+
     #brand-name-short {
+        letter-spacing: 0;
         display: block;
     }
 
@@ -725,7 +730,7 @@ figure.article-image caption {
 
 @media all and (max-width: 500px) {
     a.nav-item {
-        text-transform: lowercase;
+        text-transform: capitalize;
         letter-spacing: unset;
         padding: 0 0.25em;
     }
