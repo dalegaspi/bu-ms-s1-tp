@@ -709,6 +709,12 @@ h5.article-title {
 
 figure.article-image {
     padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.article-image img {
+    display: inline-block;
 }
 
 figure.article-image caption {
