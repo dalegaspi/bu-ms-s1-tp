@@ -5,8 +5,9 @@
 export const SimplePrintDoc = {
     props: ["title"],
     methods: {
-        sendToPrinter() {
+        sendToPrinter(e) {
             window.print();
+            e.preventDefault();
         }
     },
     template: `
