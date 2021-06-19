@@ -28,7 +28,7 @@ export const SimpleGuestBook = {
     template: `
     <form @submit="validateAndSubmit" id="guestBook" ref="guestBook" action="${GUESTBOOK_POST_URL}">
         <label class="contact-form">Name</label>
-        <input type="text" id="name" v-model="name" placeholder="You can be anonymous" class="contact-input-text">
+        <input type="text" id="name" v-model="name" placeholder="You can be anonymous." class="contact-input-text">
         <br>
         <br>
         <label class="contact-form">E-Mail</label>
@@ -36,7 +36,7 @@ export const SimpleGuestBook = {
         <br>
         <br>
         <label class="contact-form">Message</label>
-        <textarea class="contact-input" v-model="message" id="message" placeholder="Say something." maxlength="200"></textarea>
+        <textarea class="contact-input" v-model="message" id="message" placeholder="Write something." maxlength="200"></textarea>
         <br>
         <button class="flat-button">Send Message</button>&nbsp&nbsp;<span class="form-error">{{ error }}</span>
         <span ref="messageOk" class="form-ok"> {{ status }}</span>
