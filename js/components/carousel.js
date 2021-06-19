@@ -72,11 +72,6 @@ export const SimpleImageCarousel = {
                     "exif": ["Ricoh GR II"]
                 },
                 {
-                    "url": "images/gallery/m.jpg",
-                    "desc": "Carnaby Street",
-                    "exif": ["iPhone 6s"]
-                },
-                {
                     "url": "images/gallery/n.jpg",
                     "desc": "Stormtrooper",
                     "exif": ["Nikon Z6", "Nikon Z 50 f1.8"]
@@ -90,11 +85,6 @@ export const SimpleImageCarousel = {
                     "url": "images/gallery/p.jpg",
                     "desc": "Not My Dog",
                     "exif": ["Leica M9", "Voïgtlander 50 f2 APO"]
-                },
-                {
-                    "url": "images/gallery/q.jpg",
-                    "desc": "Camera gear",
-                    "exif": ["iPhone 12"]
                 },
                 {
                     "url": "images/gallery/r.jpg",
