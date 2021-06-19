@@ -541,7 +541,7 @@ div.content-with-toc {
 }
 
 div.content-left {
-    width: 40%;
+    width: 100%;
     padding-right: 1em;
     display: flex;
     align-items: flex-start;
@@ -593,8 +593,7 @@ div.contact-card {
 
 section.contact-card-content {
     width: 80%;
-    text-overflow: ellipsis;
-    overflow-y: scroll;
+    overflow: hidden;
     white-space: nowrap;
     padding: 1em;
 }
@@ -799,4 +798,38 @@ aside.home h4 {
 
 aside.home ul {
     color: var(--si-lucky-gray);
+}
+
+/* permanent scroll to top */
+.button-scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    padding: 0.5em;
+    background: var(--si-lucky-gray);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.button-scroll-top:active {
+    opacity: 80%;
+}
+
+span.scroll-top {
+    color: var(--si-light-light-gray);
+}
+
+span.scroll-top:hover {
+    color: var(--si-lucky-gray);
+}
+
+.mostly-max-width {
+    width: 85%;
 }

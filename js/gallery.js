@@ -25,7 +25,7 @@ export const Gallery = {
                       <div class="divider"></div>
                 </section>
                
-                <div class="content">
+                <div class="content mostly-max-width">
                     <simple-image-carousel></simple-image-carousel>
                 </div>
             </div>

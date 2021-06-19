@@ -13,7 +13,7 @@ export const SimpleScrollTop = {
     template: `
         <a href="#" @click="scrollToTop" class="collapse-on-print">
             <img v-if="type == 'image'" alt="scroll to top" class="scroll-top" src="images/arrow-up-outline.svg">
-            <span v-else>Top</span>
+            <span v-else class="scroll-top">Back to Top</span>
         </a>
     `
 }

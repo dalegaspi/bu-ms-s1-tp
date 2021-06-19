@@ -24,7 +24,8 @@ export const Work = {
                             <li><router-link to="#education">Education</router-link></li>
                             <li><router-link to="#certifications">Certifications</router-link></li>
                             <br>
-                            <simple-scroll-top type="image"></simple-scroll-top>
+                            <br>
+                            <simple-scroll-top type="text"></simple-scroll-top>
                         </ul>
                     </div>
                 </div>
