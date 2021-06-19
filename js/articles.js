@@ -105,7 +105,7 @@ export const Articles = {
                     <a href="https://angular-evan.medium.com/data-flow-best-practices-256a8ece4e5d">one-way binding construct in v1.5.</a></p>
                     <p>If this feature is so great, why do some developers hate it and even calling it anti-pattern? 
                     A few reasons I could think of, actually:</p>
-                    <ul>
+                    <ul type="square">
                         <li>While Vue (and the newer Angular 2.x) has addressed the performance issues plagued 
                         by two-way bindings in Angular 1.x, there is a tendency to have performance problems overall 
                         since there is a constant watch of change of events for the model then apply the changes to 
@@ -118,7 +118,7 @@ export const Articles = {
                     <p>Having had the chance to work on both React and Vue, and with the advances of ES6 and Vue 
                     (with version 3.0), the choice has become clearer: Vue is better. In my opinion, there are two 
                     issues with React:</p>
-                    <ul>
+                    <ul type="square">
                         <li>The lack of any support for two-way binding in React means you will have to deal with Redux or 
                         any of the state management. Well, no not exactly, they did introduce 
                         <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks</a> 

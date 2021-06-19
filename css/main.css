@@ -694,6 +694,10 @@ figure.article-image caption {
     .row {
         justify-content: space-around;
     }
+
+    aside.home {
+        display: none;
+    }
 }
 
 @media all and (max-width: 750px) {
@@ -774,4 +778,23 @@ img.print-doc:hover {
 
 .collapse-on-screen {
     display: none;
+}
+
+aside.home {
+    padding: 1em 2em;
+    float: right;
+    margin-left: 1.2em;
+    background-color: #f5f5f5;
+    border-left-color: rgb(219, 219, 219);
+    border-left-style: solid;
+}
+
+aside.home h4 {
+    font-family: var(--si-header-font);
+    color: var(--si-lucky-gray);
+    text-align: center;
+}
+
+aside.home ul {
+    color: var(--si-lucky-gray);
 }

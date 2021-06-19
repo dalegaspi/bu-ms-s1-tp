@@ -40,6 +40,6 @@ export const SimpleGreetings = {
     template: `
         <span v-if="!greeting.includes('breathtaking')">{{ greeting }}</span>
         <!-- easter egg -->
-        <span v-else><a href="https://youtu.be/0DWap7pS7XM?t=134" target="_blank">{{ greeting }}&nbsp;&nbsp;<span class="tag">click me 😊</span></a></span>
+        <span v-else><a href="https://youtu.be/0DWap7pS7XM?t=134" target="_blank">{{ greeting }}&nbsp;&nbsp;<span class="tag">click me :-)</span></a></span>
     `
 }
