@@ -7,9 +7,10 @@
 'use strict';
 import eventHub from "../eventhub.js";
 import {blurThenHideText, removeClassWithDelay} from "../utils.js";
+import appConfig from "../config.js"
 
 // regex from: https://vuejs.org/v2/cookbook/form-validation.html
-const GUESTBOOK_POST_URL = 'https://www.subtleimages.com/api/guestbook/message'
+const GUESTBOOK_POST_URL = `${appConfig.$apiBaseUrl}api/guestbook/message`
 const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 export const SimpleGuestBook = {
     data() {
@@ -20,6 +21,9 @@ export const SimpleGuestBook = {
             email: '',
             message: '',
         }
+    },
+    mounted() {
+        console.log(`GUESTBOOK_POST_URL = ${GUESTBOOK_POST_URL}`);
     },
     template: `
     <form @submit="validateAndSubmit" id="guestBook" ref="guestBook" action="${GUESTBOOK_POST_URL}">

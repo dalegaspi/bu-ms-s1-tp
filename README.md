@@ -13,6 +13,33 @@ A video of the feature tour can be seen [here](https://youtu.be/Xl8y_MR7ps0).
 - Python Flask (Hosting, routing, and backend API)
 - Redis (Persistence)
 
+## Development and Configuration
+
+The different config files under `/config` folder dictates the app behavior:
+
+```javascript
+export default {
+    // the rest api base url
+    $apiBaseUrl: 'https://www.subtleimages.com/',
+    
+    // the base path for use with Vue Router
+    $base : '',
+    
+    // history mode for Vue Router...can be 'hash' or 'html5'
+    $historyMode: 'hash'
+}
+```
+
+The `justfile` has tasks for copying which config to be used and is copied to `js/config.js`
+
+```bash
+# copy the default config.js from config/dev-hash
+> just
+
+# copy the html config.js from config/dev-html
+> just dev-html5
+```
+
 ## Implementation and Code Structure
 
 ### How Vue is Used 
