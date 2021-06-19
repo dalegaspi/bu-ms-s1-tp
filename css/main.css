@@ -592,9 +592,11 @@ div.contact-card {
 }
 
 section.contact-card-content {
+    width: 80%;
     text-overflow: ellipsis;
-    overflow: scroll;
+    overflow-y: scroll;
     white-space: nowrap;
+    padding: 1em;
 }
 
 section.download-vcard {
