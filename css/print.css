@@ -10,6 +10,7 @@ body {
         we will only allow printing in articles and resume
      */
     visibility: hidden;
+    background: white;
 }
 
 /*
