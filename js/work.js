@@ -8,7 +8,7 @@
 export const Work = {
     template: ` 
         <div>
-            <div class="banner-image work-banner-image">
+            <div class="banner-image work-banner-image collapse-on-print">
                 <h1 class="home-banner-text text-focus-in">WORK</h1>
             </div>
             <div id="top" class="content home-intro content-with-toc">
@@ -36,7 +36,7 @@ export const Work = {
                         <h6 class="resume-title">E: dalegaspi@gmail.com</h6>
                         <h6 class="resume-title">T: (732) 410-4914</h6>
                     </section>
-                    <section class="download-vcard">
+                    <section class="download-vcard collapse-on-print">
                         <simple-print-doc title="print resume"></simple-print-doc>
                     </section>
                     <section>

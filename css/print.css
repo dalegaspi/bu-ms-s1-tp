@@ -12,6 +12,14 @@ body {
     visibility: hidden;
 }
 
+/*
+    this avoids the weird page breaks when printing
+    https://stackoverflow.com/a/907719/918858
+*/
+p, pre, table {
+    break-inside: avoid;
+}
+
 .print {
     visibility: visible;
 }

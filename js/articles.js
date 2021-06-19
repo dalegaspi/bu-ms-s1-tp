@@ -8,11 +8,11 @@
 export const Articles = {
     template: ` 
         <div>
-            <div class="banner-image articles-banner-image">
+            <div class="banner-image articles-banner-image collapse-on-print">
                 <h1 class="home-banner-text text-focus-in">ARTICLES</h1>
             </div>
             <div class="content home-intro print">
-                <section class="download-vcard">
+                <section class="download-vcard collapse-on-print">
                     <simple-print-doc title="print articles"></simple-print-doc>
                 </section>
                 <section class="collapse-on-print">
