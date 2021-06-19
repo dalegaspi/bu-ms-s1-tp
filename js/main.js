@@ -5,6 +5,8 @@
  */
 
 'use strict';
+// config import
+import appConfig from './config.js'
 
 // components
 import {SimpleMusicControl} from "./components/music.js";
@@ -37,8 +39,32 @@ const routes = [
     { path: '/contact', component: Contact },
 ];
 
+/**
+ * determine the history mode based on the config
+ *
+ * @param config
+ * @returns {*}
+ */
+function historyMode(config) {
+    let createHistoryFunc;
+    if (config.$historyMode !== undefined && config.$historyMode === 'html5') {
+        console.log('history mode => html5')
+        createHistoryFunc = VueRouter.createWebHistory;
+    } else {
+        console.log('history mode => hash')
+        createHistoryFunc = VueRouter.createWebHashHistory;
+    }
+
+    if (config.$base !== undefined && config.$base.length > 0) {
+        console.log('app base ')
+        return createHistoryFunc(config.$base);
+    } else {
+        return createHistoryFunc();
+    }
+}
+
 const router = VueRouter.createRouter({
-    history: VueRouter.createWebHashHistory(),
+    history: historyMode(appConfig),
     routes,
     scrollBehavior: (to, from, savedPosition) => {
         if (to.hash) {

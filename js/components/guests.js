@@ -7,8 +7,9 @@
 'use strict';
 
 import eventHub from "../eventhub.js";
+import appConfig from "../config.js"
 
-const GUESTS_MESSAGES_URL = 'https://www.subtleimages.com/api/guestbook/messages';
+const GUESTS_MESSAGES_URL = `${appConfig.$apiBaseUrl}api/guestbook/messages`;
 export const SimpleGuestMessages = {
     data() {
         return {
@@ -17,6 +18,7 @@ export const SimpleGuestMessages = {
         }
     },
     mounted() {
+        console.log(`GUESTS_MESSAGES_URL = ${GUESTS_MESSAGES_URL}`);
         this.refreshData();
 
         // catch the custom event fired from Contact -> reloadMessages click handler
