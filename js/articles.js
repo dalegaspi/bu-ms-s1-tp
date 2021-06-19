@@ -86,8 +86,12 @@ export const Articles = {
                     that I am truly proud of.</p>
                 </article>
                 <simple-scroll-top type="image"></simple-scroll-top>
-                <div class="divider"></div>
-                <article id="article1">
+                <div class="divider collapse-on-print"></div>
+                <!-- 
+                    the page-break-before: always must be inline here for the print page breaking to work
+                    https://stackoverflow.com/a/65848374/918858
+                -->
+                <article id="article1" style="page-break-before: always">
                     <h2 class="article-title">Vue vs. React</h2>
                     <h3 class="article-publish-date">13 Jun 2021</h3>
                     <p>For me, the better choice is Vue regardless of size of the project. And this can be explained 
@@ -141,12 +145,12 @@ export const Articles = {
                     true anymore.</p>
                 </article>
                 <simple-scroll-top type="image"></simple-scroll-top>
-                <div class="divider"></div>
-                <article id="article2">
+                <div class="divider collapse-on-print"></div>
+                <article id="article2" style="page-break-before: always">
                     <h2 class="article-title">Arrow Functions and the Road to Functional Programming</h2>
                     <h3 class="article-publish-date">08 Jun 2021</h3>
                     <p>Let's consider this data <span class="code">tbl_hs_students</span> from 
-                    <a href="https://gist.githubusercontent.com/dalegaspi/1de4c34393f624551a8cbf21ea30763d/raw/52c803f9386ad77305b28ad9ecbac47b8d28b27e/lst_data.js">here</a>.  
+                    <a href="https://git.io/JngXH">here</a>.  
                     If the question is:
                     <blockquote>
                         Can you give me the list of the names of the seniors who are not in detention?
