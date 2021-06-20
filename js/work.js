@@ -7,7 +7,10 @@
 
 export const Work = {
     mounted() {
-        window.scrollTo(0, 0);
+        // this temporarily turns off smooth scroll animation while going to top of page
+        document.documentElement.style.scrollBehavior = 'auto';
+        setTimeout(() => window.scrollTo(0, 0), 5);
+        setTimeout(() => document.documentElement.style.scrollBehavior = 'smooth', 5);
     },
     template: ` 
         <div>
