@@ -27,14 +27,17 @@ header {
 }
 
 .brand {
+    padding-left: 2em;
     align-items: center;
     display: flex;
     max-height: 4em;
     box-sizing: border-box;
     text-overflow: ellipsis;
+    background-color: var(--si-almost-black);
+    z-index: 999;
 }
 
-a.brand-link:active, a.brand-link:visited, a.brand-link:hover {
+a.brand-link:active, a.brand-link:visited, a.brand-link:hover, a.brand-link:focus, a.brand-link:link {
     color: white;
     text-decoration: none;
 }
@@ -84,7 +87,7 @@ span.brand {
 }
 
 .banner-image {
-    margin: auto;
+    margin: 4em auto auto;
     text-align: center;
     height: 100px;
     width: 100%;
@@ -551,7 +554,7 @@ div.content-left {
 
 div.content-left-toc {
     position: sticky;
-    top: 0;
+    top: 4em;
     color: var(--si-lucky-gray);
 }
 
@@ -721,6 +724,7 @@ figure.article-image caption {
     #brand-name-short {
         letter-spacing: 0;
         display: block;
+
     }
 
     a.nav-item {
@@ -835,4 +839,12 @@ span.scroll-top:hover {
 
 .mostly-max-width {
     width: 85%;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }

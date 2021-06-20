@@ -6,6 +6,9 @@
 'use strict';
 
 export const Work = {
+    mounted() {
+        window.scrollTo(0, 0);
+    },
     template: ` 
         <div>
             <div class="banner-image work-banner-image collapse-on-print">

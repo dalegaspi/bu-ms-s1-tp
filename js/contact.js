@@ -16,6 +16,8 @@ export const Contact = {
             // is caught in SimpleGuestMessages component
             eventHub.$emit('refresh-guest-list');
         });
+
+        window.scrollTo(0, 0);
     },
     template: ` 
         <div>

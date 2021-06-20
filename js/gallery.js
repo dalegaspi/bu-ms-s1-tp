@@ -6,6 +6,9 @@
 'use strict';
 
 export const Gallery = {
+    mounted() {
+        window.scrollTo(0, 0);
+    },
     template: ` 
         <div>
             <div class="banner-image gallery-banner-image">

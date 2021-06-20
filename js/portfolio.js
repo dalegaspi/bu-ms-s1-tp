@@ -6,6 +6,9 @@
 'use strict';
 
 export const Portfolio = {
+    mounted() {
+        window.scrollTo(0, 0);
+    },
     data() {
         return {
             items: [
