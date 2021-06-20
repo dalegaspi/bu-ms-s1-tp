@@ -33,7 +33,7 @@ export const SimplePortfolioCard = {
                     </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content card-desc">
                 <p>{{ desc }}</p>
             </div>
             <div class="card-actions text-center">

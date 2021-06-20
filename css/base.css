@@ -168,9 +168,12 @@ blockquote {
     display: block;
     position: relative;
     height: 40%;
-    min-height: 200px;
+    min-height: 125px;
 }
 
+.card-desc p {
+    text-align: center;
+}
 
 .card-image {
     line-height: 1.8;
@@ -207,7 +210,6 @@ blockquote {
     color: white;
     margin: 0;
     box-sizing: border-box;
-    position: absolute;
     bottom: 1rem;
     width: 100%;
     padding: 1rem;
