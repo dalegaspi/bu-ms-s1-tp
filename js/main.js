@@ -69,7 +69,14 @@ const router = VueRouter.createRouter({
     routes,
     scrollBehavior: (to, from, savedPosition) => {
         if (to.hash) {
-            return {el: to.hash}
+            const OFFSET_SHIM = 10;
+            let navHeight = document.getElementById("mainMenu").clientHeight;
+            return {
+                el: to.hash,
+                // we have the sticky menu item so we need to take that into account when
+                // scrolling to new position
+                top: navHeight + OFFSET_SHIM,
+            }
         } else {
             return {x: 0, y: 0}
         }
