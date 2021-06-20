@@ -16,7 +16,7 @@ export const Portfolio = {
                     id: 0,
                     title: '.01',
                     subTitle: 'HTML5 + CSS3',
-                    desc: 'A website built using HTML5 and CSS3 only',
+                    desc: 'A website built using HTML5 and CSS3 only.',
                     imgSrc: 'images/portfolio/01.jpg',
                     url: 'https://www.subtleimages.com/s/hw02',
                     repo: 'https://github.com/dalegaspi/bu-ms-s1-02'
