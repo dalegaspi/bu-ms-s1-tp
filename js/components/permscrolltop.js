@@ -10,7 +10,7 @@ export const SimplePermanentScrollTop = {
         onScroll() {
             const SCROLL_THRESHOLD = 0.10;
             let rootElement = document.documentElement;
-            let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+            let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
             if ((rootElement.scrollTop / scrollTotal ) > SCROLL_THRESHOLD ) {
                 console.log('showing scroll to top button');
                 this.$refs.scrollToTop.style.visibility = 'visible';
