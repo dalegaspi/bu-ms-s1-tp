@@ -803,23 +803,26 @@ aside.home ul {
 /* permanent scroll to top */
 .button-scroll-top {
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 20px;
+    bottom: 20px;
     width: 2.5rem;
     height: 2.5rem;
     color: white;
-    padding: 0.5em;
-    background: var(--si-lucky-gray);
+    padding: 0.75em;
+    background-color: rgba(75, 75, 75, 0.3);
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(50, 50, 50, 0.5);
     outline: none;
     border: none;
     cursor: pointer;
-    opacity: 50%;
+    opacity: 30%;
+    z-index: 99;
+    visibility: hidden;
 }
 
 .button-scroll-top:active {
-    opacity: 80%;
+    background-color: rgba(75, 75, 75, 0.7);
+    opacity: 70%;
 }
 
 span.scroll-top {
