@@ -523,8 +523,10 @@ div.guest-message-ts {
     width: 30%;
 }
 
-div.guest-message-data {
+div.guest-message {
     width: 50%;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 .guest-message-entry {

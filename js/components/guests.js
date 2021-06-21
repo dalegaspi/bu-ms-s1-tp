@@ -68,7 +68,7 @@ export const SimpleGuestMessages = {
                         <h6 class="guest-message-ts">{{ getMessageTime(m.ts) }}</h6>
                     </div>
                     <div class="guest-message guest-message-data ">
-                        <h5 class="guest-message">{{ m.name }}</h5>
+                        <h5 lang="en" class="guest-message">{{ m.name }}</h5>
                         <h6 class="resume-title">"{{ m.msg }}"</h6>
                     </div>
                 </section>

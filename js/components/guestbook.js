@@ -48,7 +48,7 @@ export const SimpleGuestBook = {
         },
 
         isValidMessage(msg) {
-            return msg !== undefined && msg.length > 0;
+            return msg !== undefined && msg.length > 0 && msg.length < 200;
         },
 
         normalizeName(name) {
@@ -71,11 +71,11 @@ export const SimpleGuestBook = {
             let messageOkText = this.$refs.messageOk;
             removeClassWithDelay(messageOkText, 'text-blur-out');
             if (!this.isValidEmail(this.email)) {
-                this.error = 'Invalid e-mail';
+                this.error = 'Invalid e-mail.';
                 this.status = ''
                 console.log("guestbook invalid e-mail")
             } else if (!this.isValidMessage(this.message)) {
-                this.error = 'Message should not be empty.';
+                this.error = 'Message should not be empty and less than 200 characters.';
                 this.status = ''
                 console.log("guestbook invalid msg")
             } else {
