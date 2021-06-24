@@ -11,8 +11,6 @@ dev-html5:
     @cp config/dev-html5/config.js js/config.js
 
 prod:
-    @echo 'copying prod/config.js'
-    @cp config/prod/config.js dist/js/config.js
     @echo 'copying artifacts to /dist folder'
     @cp -R js dist/
     @cp -R images dist/
@@ -22,6 +20,8 @@ prod:
     @cp index.html dist/
     @cp README.md dist/
     @cp robots.txt dist/
+    @echo 'copying prod/config.js'
+    @cp config/prod/config.js dist/js/config.js
     @for file in `ls dist/js/*.js`; do \
         javascript-obfuscator $file --log false --compact true --output $file; \
     done
@@ -33,8 +33,6 @@ prod:
     done
 
 prod-no-uglify:
-    @echo 'copying prod/config.js'
-    @cp config/prod/config.js dist/js/config.js
     @echo 'copying artifacts to /dist folder'
     @cp -R js dist/
     @cp -R images dist/
@@ -44,3 +42,5 @@ prod-no-uglify:
     @cp index.html dist/
     @cp README.md dist/
     @cp robots.txt dist/
+    @echo 'copying prod/config.js'
+    @cp -f config/prod/config.js dist/js/config.js
