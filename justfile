@@ -31,3 +31,16 @@ prod:
     @for file in `ls dist/css/*.css`; do \
         uglifycss $file --output $file; \
     done
+
+prod-no-uglify:
+    @echo 'copying prod/config.js'
+    @cp config/prod/config.js dist/js/config.js
+    @echo 'copying artifacts to /dist folder'
+    @cp -R js dist/
+    @cp -R images dist/
+    @cp -R audio dist/
+    @cp -R css dist/
+    @cp dalegaspi.vcf dist/
+    @cp index.html dist/
+    @cp README.md dist/
+    @cp robots.txt dist/

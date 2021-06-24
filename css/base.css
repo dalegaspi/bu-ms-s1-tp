@@ -8,14 +8,14 @@
     --si-body-font: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
     --si-header-font:  "Montserrat", "Helvetica Neue", Arial, sans-serif;
     --si-code-font: "Andale Mono", monospace;
-    --si-light-light-gray: #adadad;
+    --si-light-light-gray: #999;
     --si-somewhat-light-gray: #e6e6e6;
     --si-quarter-gray: #444;
     --si-maybe-quarter-gray: #555;
     --si-lucky-gray: #777;
     --si-green: #77b384;
     --si-red: rgb(232, 63, 63);
-    --si-almost-white: #ddd;
+    --si-almost-white: #eee;
 }
 
 body {

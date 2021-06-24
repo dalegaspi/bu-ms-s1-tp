@@ -20,6 +20,22 @@ header {
     text-overflow: ellipsis;
 }
 
+a:link {
+    color: var(--si-maybe-quarter-gray);
+}
+
+a:active {
+    color: var(--si-maybe-quarter-gray);
+}
+
+a:visited {
+    color: var(--si-maybe-quarter-gray);
+}
+
+a:hover {
+    color: black;
+}
+
 .shadow {
     -webkit-box-shadow: 0 2px 4px #000000;
     -moz-box-shadow: 0 2px 4px #000000;
@@ -58,16 +74,16 @@ a.nav-item {
     font-family: var(--si-header-font);
     letter-spacing: 0.1em;
     padding: 0 0.5rem;
-    color: #444;
+    color: var(--si-light-light-gray);
     text-overflow: ellipsis;
 }
 
-a.nav-item:visited {
-    color: var(--si-quarter-gray);
+a.nav-item:visited a.nav-item:active {
+    color: var(--si-light-light-gray);
 }
 
 a.nav-item:hover {
-    color: var(--si-light-light-gray);
+    color: var(--si-almost-white);
 }
 
 .text-nowrap {
@@ -150,21 +166,6 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    color: var(--si-maybe-quarter-gray);
-}
-
-a:active {
-    color: var(--si-maybe-quarter-gray);
-}
-
-a:visited {
-    color: var(--si-maybe-quarter-gray);
-}
-
-a:hover {
-    color: black;
-}
 
 a.wide-link {
     font-size: 14px;
