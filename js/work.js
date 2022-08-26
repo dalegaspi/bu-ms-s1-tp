@@ -50,11 +50,11 @@ export const Work = {
                     <h2 id="employers" class="resume-sub-header collapse-on-print">Employment History</h2>
                     <section id="employer1" class="employer">
                     <h4 class="resume-title">SiriusXM-Pandora</h4>
-                    <h6 class="resume-title">August 2014 &mdash;</h6>
+                    <h6 class="resume-title">August 2014 &mdash; August 2022</h6>
                     </section>
                     <section>
-                        <h5 class="resume-title-inline">Team Lead, Principal Software Engineer</h5> <span class="tag resume-current hide-on-print">Current</span>
-                        <h6 class="resume-title">January 2021 &mdash;</h6>
+                        <h5 class="resume-title-inline">Team Lead, Principal Software Engineer</h5> <!-- <span class="tag resume-current hide-on-print">Current</span> -->
+                        <h6 class="resume-title">January 2021 &mdash; August 2022</h6>
                         <h6 class="resume-title">Lawerenceville, New Jersey</h6>
                         <p class="resume">Design and implementation of the APIS for the newer applications running on cars
                          and on mobile, web, and ten-foot devices with Envoy and Spring Cloud Gateway.</p>
@@ -150,9 +150,10 @@ export const Work = {
                         <h2 class="resume-sub-header">Education</h2>
                         <section>
                             <h5 class="resume-title">Boston University</h5> 
-                            <h6 class="resume-title-inline">MS Software Development</h6> <span class="tag resume-current hide-on-print">In Progress</span>
+                            <h6 class="resume-title-inline">MS Software Development</h6>
                             <br>
-                            <h6 class="resume-title">2021 &mdash; </h6>
+                            <h6 class="resume-title">2021 &mdash; 2022</h6>
+                            <h6 class="resume-title">GPA 3.880</h6>
                         </section>
                         <section>
                             <h5 class="resume-title">Mapúa University</h5>
