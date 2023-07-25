@@ -128,7 +128,7 @@ curl "https://subtleimags.com/api/guestbook/messages"
 
 The page has as a very simple and clean design aimed for both desktop and mobile browsers in mind. Optimum fonts and font sizes and colors (with applied CSS styling on line/letter spacing and margins) have been selected for best readability. Careful thought has been put in so that the content is as flat as possible and requires no unnecessary horizontal scrolling.
 
-However, certain sections of the page af liquid and adjusts as the screen real estate changes (using `@media` query in CSS3), particularly the header/menu and the gallery and cards components that uses flex box to flow fluidly on the available screen. 
+Moreover, certain sections of the page are [responsive](https://en.wikipedia.org/wiki/Responsive_web_design)--i.e., they adapt the readability as the screen real estate changes (using `@media` query in CSS3), particularly the header/menu and the gallery and cards components that uses flex box to flow fluidly on the available screen. 
 
 
 
